@@ -1,62 +1,7 @@
 {
-    "fragrances": {
-      "men": {
-        "PacoRabanne": {
-          "1": {
-            "fragManuDesc": "Inspired By Paco Rabanne Invictus",
-            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
-            "name": "Paco Rabanne Invictus Eau de Toilette",
-            "price": 99.99,
-            "rating": 5,
-            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg"
-          }
-        },
-        "Versace": {
-          "1": {
-            "fragManuDesc": "Inspired By Versace Dylan Blue",
-            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
-            "name": "Dylan Blue Pour Homme Eau de Toilette",
-            "price": 103,
-            "rating": 4,
-            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
-          }
-        }
-      },
-      "women": {
-        "Versace": {
-          "1": {
-            "fragManuDesc": "Inspired By Versace Bright Crystal",
-            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799000/versace_bright_crystal.jpg",
-            "name": "Versace Bright Crystal Eau de Toilette",
-            "price": 85.00,
-            "rating": 4.5,
-            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799001/versace_bright_crystal_hover.jpg"
-          }
-        },
-        "Bvlgari": {
-          "1": {
-            "fragManuDesc": "Inspired By Bvlgari Omnia Crystalline",
-            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799002/bvlgari_omnia_crystalline.jpg",
-            "name": "Bvlgari Omnia Crystalline Eau de Toilette",
-            "price": 95.00,
-            "rating": 4.7,
-            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799003/bvlgari_omnia_crystalline_hover.jpg"
-          }
-        },
-        "PacoRabanne": {
-          "1": {
-            "fragManuDesc": "Inspired By Lady Million",
-            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799004/paco_rabanne_lady_million.jpg",
-            "name": "Paco Rabanne Lady Million Eau de Parfum",
-            "price": 90.00,
-            "rating": 4.6,
-            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799005/paco_rabanne_lady_million_hover.jpg"
-          }
-        }
-      }
-    },
-    "all_products": {
-      "1": {
+    "all_products": [
+      null,
+      {
         "fragManuDesc": "Inspired By Paco Rabanne Invictus",
         "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
         "name": "Paco Rabanne Invictus Eau de Toilette",
@@ -64,7 +9,7 @@
         "rating": 5,
         "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg"
       },
-      "2": {
+      {
         "fragManuDesc": "Inspired By Versace Dylan Blue",
         "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
         "name": "Dylan Blue Pour Homme Eau de Toilette",
@@ -72,30 +17,90 @@
         "rating": 4,
         "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
       },
-      "3": {
+      {
         "fragManuDesc": "Inspired By Versace Bright Crystal",
-        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799000/versace_bright_crystal.jpg",
+        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800639/61UdVadaEaL._AC_UF894_1000_QL80__ceco9k.jpg",
         "name": "Versace Bright Crystal Eau de Toilette",
-        "price": 85.00,
+        "price": 85,
         "rating": 4.5,
-        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799001/versace_bright_crystal_hover.jpg"
+        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800645/versace-bright-crystal-absolu-edp-perfume-cologne-358030_y2ntrq.jpg"
       },
-      "4": {
+      {
         "fragManuDesc": "Inspired By Bvlgari Omnia Crystalline",
-        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799002/bvlgari_omnia_crystalline.jpg",
+        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800651/155999920_1_720x928_lt1yll.webp",
         "name": "Bvlgari Omnia Crystalline Eau de Toilette",
-        "price": 95.00,
+        "price": 95,
         "rating": 4.7,
-        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799003/bvlgari_omnia_crystalline_hover.jpg"
+        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800656/pixelcut-export_1_1a9b0c60-5ea7-4be2-83b5-7f2422ccdbae_cz4lw2.webp"
       },
-      "5": {
+      {
         "fragManuDesc": "Inspired By Lady Million",
-        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799004/paco_rabanne_lady_million.jpg",
+        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
         "name": "Paco Rabanne Lady Million Eau de Parfum",
-        "price": 90.00,
+        "price": 90,
         "rating": 4.6,
-        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730799005/paco_rabanne_lady_million_hover.jpg"
+        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800619/51jmUFi4FTL._AC_UF894_1000_QL80__hllip7.jpg"
+      }
+    ],
+    "fragrances": {
+      "men": {
+        "PacoRabanne": [
+          null,
+          {
+            "fragManuDesc": "Inspired By Paco Rabanne Invictus",
+            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
+            "name": "Paco Rabanne Invictus Eau de Toilette",
+            "price": 99.99,
+            "rating": 5,
+            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg"
+          }
+        ],
+        "Versace": [
+          null,
+          {
+            "fragManuDesc": "Inspired By Versace Dylan Blue",
+            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
+            "name": "Dylan Blue Pour Homme Eau de Toilette",
+            "price": 103,
+            "rating": 4,
+            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
+          }
+        ]
+      },
+      "women": {
+        "Bvlgari": [
+          null,
+          {
+            "fragManuDesc": "Inspired By Bvlgari Omnia Crystalline",
+            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800651/155999920_1_720x928_lt1yll.webp",
+            "name": "Bvlgari Omnia Crystalline Eau de Toilette",
+            "price": 95,
+            "rating": 4.7,
+            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800656/pixelcut-export_1_1a9b0c60-5ea7-4be2-83b5-7f2422ccdbae_cz4lw2.webp"
+          }
+        ],
+        "PacoRabanne": [
+          null,
+          {
+            "fragManuDesc": "Inspired By Lady Million",
+            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
+            "name": "Paco Rabanne Lady Million Eau de Parfum",
+            "price": 90,
+            "rating": 4.6,
+            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800619/51jmUFi4FTL._AC_UF894_1000_QL80__hllip7.jpg"
+          }
+        ],
+        "Versace": [
+          null,
+          {
+            "fragManuDesc": "Inspired By Versace Bright Crystal",
+            "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800639/61UdVadaEaL._AC_UF894_1000_QL80__ceco9k.jpg",
+            "name": "Versace Bright Crystal Eau de Toilette",
+            "price": 85,
+            "rating": 4.5,
+            "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800645/versace-bright-crystal-absolu-edp-perfume-cologne-358030_y2ntrq.jpg"
+          }
+        ]
       }
     }
   }
-  
