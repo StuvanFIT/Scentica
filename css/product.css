@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.fragrances {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 550px; /* Set a fixed width for each card */
+    height: 800px; /* Set a fixed height for each card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden; /* Ensure no overflow */
+    margin: 10px; /* Space between cards */
+}
+
+
+.image-container {
+    width: 100%; /* Full width of the card */
+    height: 70%; /* Set the height proportion of the card for the image */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.card-image, .hover-image {
+    width: 100%; /* Make the images fill the container */
+    height: 100%; /* Make the images fill the height of the container */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.hover-image {
+    position: absolute; /* Position the second image over the first */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hide the second image */
+    transition: opacity 0.3s ease; /* Smooth transition for fading */
+}
+
+.image-container:hover .card-image {
+    transform: scale(1.1); 
+}
+
+.card:hover .hover-image {
+    opacity: 1; /* Show the second image on hover */
+}
+
+.fragrance-info {
+    padding: 50px; /* Add some padding for the text area */
+}
+
+.card-title {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.card-manufacturer {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0;
+}
+
+.card-price {
+    font-size: 1.5em;
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.star-rating {
+    text-align: center;
+    margin: 5px 0; /* Add some margin for spacing */
+}
+
+.star {
+    font-size: 2.0em;
+}
+
+.star-rating .star.filled {
+    color: rgba(240, 240, 8, 0.979);
+}

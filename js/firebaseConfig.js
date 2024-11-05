@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 //import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js";
+import { getStorage, ref } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBQsp1nYCYqiQ-SeN6GbggXPKCJ-E0FR2Y",
@@ -20,5 +20,4 @@ export const app = initializeApp(firebaseConfig);
 //export const analytics = getAnalytics(app);
 export const database =getDatabase(app);
 export const storage = getStorage();
-
 
