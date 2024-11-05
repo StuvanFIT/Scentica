@@ -1,13 +1,15 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #f7f7f7;
     margin: 0;
     padding: 0;
 }
 
 h1 {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 20px;
+    font-size: 50px;;
     color: rgb(0, 0, 0);
 }
 
@@ -22,11 +24,11 @@ h1 {
 .card {
     background-color: #fff;
     width: 550px; /* Set a fixed width for each card */
-    height: 800px; /* Set a fixed height for each card */
+    height: 700px; /* Set a fixed height for each card */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out 0.5s ease;
-    text-align: center;
+   
     cursor: pointer;
     overflow: hidden; /* Ensure no overflow */
     margin: 10px; /* Space between cards */
@@ -63,7 +65,7 @@ h1 {
 }
 
 .fragrance-info {
-    padding: 50px; /* Add some padding for the text area */
+    padding: 20px; /* Add some padding for the text area */
 }
 
 .card-title {
@@ -80,12 +82,11 @@ h1 {
 
 .card-price {
     font-size: 1.5em;
-    color: #e91e63;
-    font-weight: bold;
+    color: #000000;
+    font-weight: normal;
 }
 
 .star-rating {
-    text-align: center;
     margin: 5px 0; /* Add some margin for spacing */
 }
 
@@ -94,5 +95,21 @@ h1 {
 }
 
 .star-rating .star.filled {
-    color: rgba(240, 240, 8, 0.979);
+    color: rgba(228, 224, 9, 0.856);
+}
+
+
+
+#filterSortButton {
+    padding: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid black;
+    float: right;
+    margin-right: 140px;
+    cursor:pointer;
+    
 }

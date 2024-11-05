@@ -12,25 +12,114 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/filtersort_sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/product.css">
     <link rel="icon" href="../assets/icons/scenticaIcon.webp" type="image/x-icon">
 </head>
 
 <body>
-    <h1>----- Products -----</h1>
+
+    
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Careers</a>
+    </nav>
+
+    <header>
+        <h1>Fragrances</h1>
+    </header>
+
+    <div class="filterSortContainer">
+        <button id="filterSortButton" onclick="toggleFilterSortSideBar()">Filter & Sort</button>
+    </div>
+    <div id="overlay" onclick="toggleFilterSortSideBar()"></div>
+    <div id="sidebar">
+        <span class="close">x</span>
+        <h2 id="filterSortTitle">Filter & Sort</h2>
+
+        <form class="sortForm">
+            <h3>Sort By</h3>
+
+            <label id="sort-A-Z" class="sortContainer">
+                <input type="checkbox">
+                Alphabetically, A-Z
+                <span class="checkmark"></span>
+            </label>
+            <label id="sort-Z-A"  class="sortContainer">
+                <input type="checkbox">
+                Alphabetically, Z-A
+                <span class="checkmark"></span>
+            </label>
+            <label id="sort-featured"  class="sortContainer">
+                <input type="checkbox">
+                Featured
+                <span class="checkmark"></span>
+            </label>
+            <label id="sort-best-selling"  class="sortContainer">
+                <input type="checkbox">
+                Best Selling
+                <span class="checkmark"></span>
+            </label>
+        </form>
+
+
+        
+        <form class="sortForm">
+            <h3>Availability</h3>
+
+            <label id="sort-in-stock" class="sortContainer">
+                <input type="checkbox">
+                In Stock
+                <span class="checkmark"></span>
+            </label>
+            <label id="sort-out-stock"  class="sortContainer">
+                <input type="checkbox">
+                Out Of Stock
+                <span class="checkmark"></span>
+            </label>
+
+        </form>
+
+    </div>
+    
 
 
     <section class="fragrances">
         <!--Fragrance Items will be loaded into here-->
     </section>
 
+    <footer>
+
+    </footer>
+
 
 
     <!--Import the firebase CDN Module-->
     <script type="module" src="../js/firebaseConfig.js"></script>
-
-
     <script type="module" src="/js/products.js"></script>
+
+    <script>
+        function toggleFilterSortSideBar(){
+            
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+
+            sidebar.classList.toggle("active");
+            overlay.classList.toggle("active");
+
+            if (sidebar.classList.contains("active")){
+                document.body.style.overflow ="hidden"; //disabling scrolling
+            } else{
+                document.body.style.overflow =""; //re-enable the scrolling
+            }
+        }
+
+
+    </script>
 
 </body>
 </html>

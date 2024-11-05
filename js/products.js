@@ -47,7 +47,7 @@ onValue(dbRef, (snapshot) =>{
 
 
 
-
+            //Fragrance Information
             const fragInfo = document.createElement("div");
             fragInfo.className = "fragrance-info";
 
@@ -83,14 +83,14 @@ onValue(dbRef, (snapshot) =>{
             }
                         
             
-
-
-
-
             //Fragrance Price:
             const fragPrice = document.createElement("h3");
             fragPrice.textContent = `$${product.price}`;
             fragPrice.className = "card-price";
+
+            //Add to cart:
+            const addToCart = document.createElement("div");
+            addToCart.className = "addToCart"
 
             
             
