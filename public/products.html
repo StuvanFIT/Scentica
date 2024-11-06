@@ -41,48 +41,58 @@
         <span class="close">x</span>
         <h2 id="filterSortTitle">Filter & Sort</h2>
 
-        <form class="sortForm">
-            <h3>Sort By</h3>
+        <div class="scrollable-content">
 
-            <label id="sort-A-Z" class="sortContainer">
-                <input type="checkbox">
-                Alphabetically, A-Z
-                <span class="checkmark"></span>
-            </label>
-            <label id="sort-Z-A"  class="sortContainer">
-                <input type="checkbox">
-                Alphabetically, Z-A
-                <span class="checkmark"></span>
-            </label>
-            <label id="sort-featured"  class="sortContainer">
-                <input type="checkbox">
-                Featured
-                <span class="checkmark"></span>
-            </label>
-            <label id="sort-best-selling"  class="sortContainer">
-                <input type="checkbox">
-                Best Selling
-                <span class="checkmark"></span>
-            </label>
-        </form>
+            <form class="sortForm">
+                <h3>Sort By</h3>
+    
+                <label id="sort-A-Z" class="sortContainer">
+                    <input type="checkbox" onclick="checkOnlyThisSort(this)">
+                    Alphabetically, A-Z
+                    <span class="checkmark"></span>
+                </label>
+                <label id="sort-Z-A"  class="sortContainer">
+                    <input type="checkbox" onclick="checkOnlyThisSort(this)">
+                    Alphabetically, Z-A
+                    <span class="checkmark"></span>
+                </label>
+                <label id="sort-featured"  class="sortContainer">
+                    <input type="checkbox" onclick="checkOnlyThisSort(this)">
+                    Featured
+                    <span class="checkmark"></span>
+                </label>
+                <label id="sort-best-selling"  class="sortContainer">
+                    <input type="checkbox" onclick="checkOnlyThisSort(this)">
+                    Best Selling
+                    <span class="checkmark"></span>
+                </label>
+            </form>
+    
+    
+            
+            <form class="availabilityForm">
+                <h3>Availability</h3>
+    
+                <label id="sort-in-stock" class="sortContainer">
+                    <input type="checkbox" onclick="checkOnlyThisAvailability(this)">
+                    In Stock
+                    <span class="checkmark"></span>
+                </label>
+                <label id="sort-out-stock"  class="sortContainer">
+                    <input type="checkbox" onclick="checkOnlyThisAvailability(this)">
+                    Out Of Stock
+                    <span class="checkmark"></span>
+                </label>
+    
+            </form>
+        </div>
 
 
+
+        <div class="submit-container">
+            <button id="filter-sort-submit" onclick="">See Products</button>
+        </div>
         
-        <form class="sortForm">
-            <h3>Availability</h3>
-
-            <label id="sort-in-stock" class="sortContainer">
-                <input type="checkbox">
-                In Stock
-                <span class="checkmark"></span>
-            </label>
-            <label id="sort-out-stock"  class="sortContainer">
-                <input type="checkbox">
-                Out Of Stock
-                <span class="checkmark"></span>
-            </label>
-
-        </form>
 
     </div>
     
@@ -101,6 +111,7 @@
     <!--Import the firebase CDN Module-->
     <script type="module" src="../js/firebaseConfig.js"></script>
     <script type="module" src="/js/products.js"></script>
+    <script type="module" src=""></script>
 
     <script>
         function toggleFilterSortSideBar(){
@@ -118,7 +129,26 @@
             }
         }
 
+        function checkOnlyThisSort(marked_checkbox){
+            const checkboxes = document.querySelectorAll(`.sortForm .sortContainer input[type="checkbox"]`);
 
+            checkboxes.forEach(checkbox =>{
+                
+                if (checkbox !== marked_checkbox){
+                    checkbox.checked = false;
+                }
+            })
+        }
+        function checkOnlyThisAvailability(marked_checkbox){
+            const checkboxes = document.querySelectorAll(`.availabilityForm .sortContainer input[type="checkbox"]`);
+
+            checkboxes.forEach(checkbox =>{
+                
+                if (checkbox !== marked_checkbox){
+                    checkbox.checked = false;
+                }
+            })
+        }
     </script>
 
 </body>

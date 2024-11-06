@@ -2,16 +2,16 @@
     position: fixed;
     top: 0;
     right: -900px; /* Sidebar is hidden initially */
-    width: 400px;
+    width: 550px;
     height: 100%;
     background-color: #f4f4f4;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease; 
+    transition: right 0.3s ease;
     z-index: 1001;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    overflow-y: auto;
 }
-
 #sidebar.active {
     right: 0; /* Slide sidebar into view */
 }
@@ -41,6 +41,14 @@
     font-weight:bold;
 }
 
+.scrollable-content{
+    overflow-y: auto; /* Allows scrolling for the content area */
+    scrollbar-width: none; /*Hides the scroll bar*/
+    flex: 1; /* Takes up all available space except for the button */
+    padding-right: 10px; /* Optional: adds spacing to the right */
+}
+
+.availabilityForm,
 .sortForm {
     font-family: "Nunito", sans-serif;
     padding:10px;
@@ -74,4 +82,18 @@
     font-size: 14px;
     left: 10px;
     top: 4px;
+}
+
+
+#filter-sort-submit{
+    position:sticky;
+    padding:20px;
+    font-size:20px;
+    font-weight:bold;
+    background-color: #000;
+    color:white;
+    width:100%;
+    cursor: pointer;
+    margin-bottom:30px
+
 }
