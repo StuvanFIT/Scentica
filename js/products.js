@@ -149,13 +149,18 @@ function populateProducts(productData){
             image1.alt = product.name;
             image1.className = "card-image";
 
+            const addItemButton = document.createElement("button"); //create a button to add the item to the cart
+            addItemButton.textContent = "ADD TO CART";
+            addItemButton.className = "hover-add-to-cart-button";
 
             const image2 = document.createElement("img");
             image2.src= product.transitionURL;
             image2.alt = product.name;
             image2.className = "hover-image";
 
+            imageContainer.appendChild(addItemButton);
             imageContainer.appendChild(image1);
+            
             imageContainer.appendChild(image2);
 
 

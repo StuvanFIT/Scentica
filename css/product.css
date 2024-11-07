@@ -27,9 +27,8 @@ h1 {
     height: 700px; /* Set a fixed height for each card */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out 0.5s ease;
+    transition: transform 0.5s ease-in-out 0.5s ease;
     opacity: 0;
-    transform: translateY(20px);
    
     cursor: pointer;
     overflow: hidden; /* Ensure no overflow */
@@ -89,6 +88,39 @@ h1 {
 .card:hover .hover-image {
     opacity: 1; /* Show the second image on hover */
 }
+/* Position and style for the Add to Cart button */
+
+
+/*
+In this case, the
+.second element will be stacked above the .first element because it has an explicit z-index of 1,
+while .first has z-index: auto (which is treated like 0).
+*/
+
+.hover-add-to-cart-button {
+    font-weight: bold;
+    position: absolute; /* Position the button absolutely within the image container */
+    bottom: 10px; /* 10px from the bottom */
+    right: 20px; /* 10px from the right */
+    opacity: 0; /* Initially hide the button */
+    transition: opacity 0.3s ease; /* Smooth transition for fading */
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    z-index: 1; /* Make sure the button is above the images */
+}
+
+.card:hover .hover-add-to-cart-button {
+    opacity: 1; /* Show the button when the image container is hovered */
+    transform: translateY(0);  /* Make the item move to its original position */
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+
+
 
 .fragrance-info {
     padding: 20px; /* Add some padding for the text area */
