@@ -1,6 +1,6 @@
 
 
-function sort(){
+function handleSort(){
 
     //Retreived the status check boxes for each sort option:
     const sortChecked = document.querySelector(`.sortForm input[type="checkbox"]:checked`);
@@ -11,6 +11,7 @@ function sort(){
         switch(sortChecked.id){
 
             case "sort-A-Z":
+
     
                 break;
             
@@ -32,7 +33,9 @@ function sort(){
         }
     }
 
+}
 
+function sort_a_to_z(){
 
 
 
@@ -40,6 +43,9 @@ function sort(){
 
 
 
-//Add Event Listeners
-const filterSortProdBtn = document.getElementById("filter-sort-submit");
-filterSortProdBtn.addEventListener('click', sort);
+
+
+
+
+
+

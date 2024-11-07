@@ -7,18 +7,80 @@ const dbRef = ref(database, 'all_products/');
 
 
 
-onValue(dbRef, (snapshot) =>{
 
-    const products = snapshot.val();
 
-    console.log(products)
- 
+function retriveProductData(){
 
-    products.forEach(product => {
+   
+    onValue(dbRef, (snapshot) =>{
+
+        if (snapshot.exists){
+            const productData = snapshot.val();
+
+            filterData(productData);
+        }
+    });
+
+}
+
+
+function filterData(productData){
+    
+    sortData(productData);
+
+
+
+}
+
+function sortData(productData){
+
+    console.log(productData)
+    
+    const sortChecked = document.querySelector(`.sortForm input[type="checkbox"]:checked`);
+    const availabilityChecked = document.querySelector('.availabilityForm input[type="checkbox"]:checked');
+    if (sortChecked){
+
+        switch(sortChecked.id){
+
+            case "sort-A-Z":
+
+                productData.sort((a, b) => a.name.localeCompare(b.name)); 
+                break;
+            
+            case "sort-Z-A":
+                productData.sort((a, b) => b.name.localeCompare(a.name));
+                break;
+    
+    
+            case "sort-featured":
+    
+                break;
+    
+            case "sort-best-selling":
+    
+                break;
+    
+            default:
+                alert("No id found for sorting option!")
+        }
+    }
+    populateProducts(productData);
+
+}
+
+
+
+function populateProducts(productData){
+
+    const frag = document.getElementsByClassName("fragrances")[0];
+    frag.innerHTML ="";
+
+    productData.forEach(product => {
 
 
 
         if (product){
+            
             const frag = document.getElementsByClassName("fragrances")[0];
 
             //Create a card container for the fragrance item:
@@ -104,14 +166,19 @@ onValue(dbRef, (snapshot) =>{
             
             fragItem.appendChild(fragInfo);
             frag.appendChild(fragItem);
-
-
-
         }
-        
-        
     });
+}
 
 
-})
+//Add Event Listeners
+const filterSortProdBtn = document.getElementById("filter-sort-submit");
+filterSortProdBtn.addEventListener('click', retriveProductData);
+
+document.addEventListener('DOMContentLoaded', function(e) {
+    retriveProductData();
+});
+
+
+
 
