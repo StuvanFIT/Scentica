@@ -48,6 +48,7 @@
     padding-right: 10px; /* Optional: adds spacing to the right */
 }
 
+.genderForm,
 .availabilityForm,
 .sortForm {
     font-family: "Nunito", sans-serif;
@@ -83,6 +84,15 @@
     left: 10px;
     top: 4px;
 }
+
+
+
+
+
+
+
+
+
 
 
 #filter-sort-submit{

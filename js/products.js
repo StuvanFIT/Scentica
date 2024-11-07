@@ -23,18 +23,51 @@ function retriveProductData(){
 
 }
 
-
-function filterData(productData){
-    
-    sortData(productData);
-
-
-
+function isMenProduct(product){
+    console.log(product.gender === "male" )
+    return product.gender === "male" 
+}
+function isWomenProduct(product){
+    return product.gender === "female" 
+}
+function isUnisexProduct(product){
+    return product.gender === "unisex" 
 }
 
-function sortData(productData){
+function filterData(productData){
 
-    console.log(productData)
+    let filteredProductData = [];
+
+    //Product Type checked boxes:
+    const menCheck = document.getElementById("filter-male-fragrances").checked;
+    const womenCheck = document.getElementById("filter-female-fragrances").checked;
+    const unisexCheck = document.getElementById("filter-unisex-fragrances").checked;
+
+    if (menCheck) {
+        filteredProductData.push(...productData.filter(isMenProduct));
+    }
+
+    if (womenCheck) {
+        filteredProductData.push(...productData.filter(isWomenProduct));
+    }
+
+    if (unisexCheck) {
+        filteredProductData.push(...productData.filter(isUnisexProduct));
+    }
+
+    // If no filters are selected, use all product data
+    if (!menCheck && !womenCheck && !unisexCheck) {
+        filteredProductData = productData;
+    }
+
+
+    console.log(filteredProductData);
+    sortData(filteredProductData);
+}
+
+function sortData(filteredProductData){
+
+
     
     const sortChecked = document.querySelector(`.sortForm input[type="checkbox"]:checked`);
     const availabilityChecked = document.querySelector('.availabilityForm input[type="checkbox"]:checked');
@@ -44,11 +77,11 @@ function sortData(productData){
 
             case "sort-A-Z":
 
-                productData.sort((a, b) => a.name.localeCompare(b.name)); 
+                filteredProductData.sort((a, b) => a.name.localeCompare(b.name)); 
                 break;
             
             case "sort-Z-A":
-                productData.sort((a, b) => b.name.localeCompare(a.name));
+                filteredProductData.sort((a, b) => b.name.localeCompare(a.name));
                 break;
     
     
@@ -61,10 +94,10 @@ function sortData(productData){
                 break;
     
             default:
-                alert("No id found for sorting option!")
+                break;
         }
     }
-    populateProducts(productData);
+    populateProducts(filteredProductData);
 
 }
 
