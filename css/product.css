@@ -28,11 +28,37 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
    
     cursor: pointer;
     overflow: hidden; /* Ensure no overflow */
     margin: 10px; /* Space between cards */
 }
+
+
+/* Define the animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);  /* Starts below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);  /* Ends at original position */
+    }
+}
+
+/* Add this class when you want the element to appear */
+.card.loaded {
+    opacity: 1;
+    transform: translateY(0);  /* Make the item move to its original position */
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+
+
+
 
 
 .image-container {

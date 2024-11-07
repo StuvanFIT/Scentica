@@ -217,6 +217,12 @@ function populateProducts(productData){
             
             fragItem.appendChild(fragInfo);
             frag.appendChild(fragItem);
+
+
+            // Once the fragrance is added to the DOM, trigger the transition
+            setTimeout(() => {
+                fragItem.classList.add('loaded');
+            }, 100); // Delay to allow DOM to register the element
         }
     });
 }
