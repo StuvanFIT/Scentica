@@ -32,6 +32,12 @@ function isWomenProduct(product){
 function isUnisexProduct(product){
     return product.gender === "unisex" 
 }
+function inStock(product){
+    return product.quantity >0;
+}
+function outOfStock(product){
+    return product.quantity <=0;
+}
 
 function filterData(productData){
 
@@ -58,6 +64,18 @@ function filterData(productData){
     if (!menCheck && !womenCheck && !unisexCheck) {
         filteredProductData = productData;
     }
+
+
+    //Instock or out of stock:
+    const in_stock = document.getElementById("sort-in-stock").checked;
+    const out_of_stock = document.getElementById("sort-out-stock").checked;
+
+    if (in_stock) {
+        filteredProductData = filteredProductData.filter(inStock);
+    } else if (out_of_stock) {
+        filteredProductData = filteredProductData.filter(outOfStock);
+    }
+
 
 
     console.log(filteredProductData);
