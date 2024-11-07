@@ -24,7 +24,6 @@ function retriveProductData(){
 }
 
 function isMenProduct(product){
-    console.log(product.gender === "male" )
     return product.gender === "male" 
 }
 function isWomenProduct(product){
@@ -115,6 +114,7 @@ function populateProducts(productData){
         if (product){
             
             const frag = document.getElementsByClassName("fragrances")[0];
+
 
             //Create a card container for the fragrance item:
             const fragItem = document.createElement("div");

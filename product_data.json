@@ -1,6 +1,5 @@
 {
   "all_products": [
-    null,
     {
       "fragManuDesc": "Inspired By Paco Rabanne Invictus",
       "gender": "male",
@@ -18,6 +17,15 @@
       "price": 103,
       "rating": 4,
       "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
+    },
+    {
+      "fragManuDesc": "Inspired By Chanel Allure Homme Sport",
+      "gender": "male",
+      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971915/90_R500010-R100MLS_RNUL_20_Eau_Frache_EDT_100_ml-Accessories-Versace-online-store_0_1_pnqtli.avif",
+      "name": "Versace Eau Fraiche Eau de Toilette",
+      "price": 69.99,
+      "rating": 5,
+      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971920/versace-man-eau-fraiche-edt-travel-bag-set-gift-set-288676_k3g5cx.jpg"
     },
     {
       "fragManuDesc": "Inspired By Versace Bright Crystal",
@@ -50,7 +58,6 @@
   "fragrances": {
     "men": {
       "PacoRabanne": [
-        null,
         {
           "fragManuDesc": "Inspired By Paco Rabanne Invictus",
           "gender": "male",
@@ -62,7 +69,6 @@
         }
       ],
       "Versace": [
-        null,
         {
           "fragManuDesc": "Inspired By Versace Dylan Blue",
           "gender": "male",
@@ -71,12 +77,20 @@
           "price": 103,
           "rating": 4,
           "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
+        },
+        {
+          "fragManuDesc": "Inspired By Chanel Allure Homme Sport",
+          "gender": "male",
+          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971915/90_R500010-R100MLS_RNUL_20_Eau_Frache_EDT_100_ml-Accessories-Versace-online-store_0_1_pnqtli.avif",
+          "name": "Versace Eau Fraiche Eau de Toilette",
+          "price": 69.99,
+          "rating": 5,
+          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971920/versace-man-eau-fraiche-edt-travel-bag-set-gift-set-288676_k3g5cx.jpg"
         }
       ]
     },
     "women": {
       "Bvlgari": [
-        null,
         {
           "fragManuDesc": "Inspired By Bvlgari Omnia Crystalline",
           "gender": "female",
@@ -88,7 +102,6 @@
         }
       ],
       "PacoRabanne": [
-        null,
         {
           "fragManuDesc": "Inspired By Lady Million",
           "gender": "female",
@@ -100,7 +113,6 @@
         }
       ],
       "Versace": [
-        null,
         {
           "fragManuDesc": "Inspired By Versace Bright Crystal",
           "gender": "female",
