@@ -152,6 +152,10 @@ function populateProducts(productData){
             const addItemButton = document.createElement("button"); //create a button to add the item to the cart
             addItemButton.textContent = "ADD TO CART";
             addItemButton.className = "hover-add-to-cart-button";
+            addItemButton.addEventListener("click", function(e){
+                e.stopPropagation();
+                alert("added to cart!")
+            })
 
             const image2 = document.createElement("img");
             image2.src= product.transitionURL;
@@ -211,16 +215,22 @@ function populateProducts(productData){
             addToCart.className = "addToCart"
 
             
-            
             fragItem.appendChild(imageContainer);
 
             fragInfo.appendChild(name);
             fragInfo.appendChild(fragManuDesc);
-
             fragInfo.appendChild(rating);
             fragInfo.appendChild(fragPrice);
             
             fragItem.appendChild(fragInfo);
+
+            //Attach clickable event listener to the fragrance card:
+            fragItem.addEventListener('click', function(e) {
+                alert("l")
+
+            })
+
+
             frag.appendChild(fragItem);
 
 
@@ -236,6 +246,8 @@ function populateProducts(productData){
 //Add Event Listeners
 const filterSortProdBtn = document.getElementById("filter-sort-submit");
 filterSortProdBtn.addEventListener('click', retriveProductData);
+
+
 
 document.addEventListener('DOMContentLoaded', function(e) {
     retriveProductData();

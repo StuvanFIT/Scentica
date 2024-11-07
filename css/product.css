@@ -23,7 +23,7 @@ h1 {
 
 .card {
     background-color: #fff;
-    width: 550px; /* Set a fixed width for each card */
+    width: 450px; /* Set a fixed width for each card */
     height: 700px; /* Set a fixed height for each card */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
