@@ -23,8 +23,8 @@ h1 {
 
 .card {
     background-color: #fff;
-    width: 450px; /* Set a fixed width for each card */
-    height: 700px; /* Set a fixed height for each card */
+    width: 400px; /* Set a fixed width for each card */
+    height: 590px; /* Set a fixed height for each card */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out 0.5s ease;
@@ -123,7 +123,7 @@ while .first has z-index: auto (which is treated like 0).
 
 
 .fragrance-info {
-    padding: 20px; /* Add some padding for the text area */
+    padding: 10px; /* Add some padding for the text area */
 }
 
 .card-title {
