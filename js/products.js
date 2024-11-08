@@ -226,7 +226,11 @@ function populateProducts(productData){
 
             //Attach clickable event listener to the fragrance card:
             fragItem.addEventListener('click', function(e) {
-                alert("l")
+                
+                const productDetails = JSON.stringify(product);
+                
+                localStorage.setItem('currentProduct', productDetails);
+                window.location.href = "../public/product_information_page.html";
 
             })
 
@@ -246,7 +250,6 @@ function populateProducts(productData){
 //Add Event Listeners
 const filterSortProdBtn = document.getElementById("filter-sort-submit");
 filterSortProdBtn.addEventListener('click', retriveProductData);
-
 
 
 document.addEventListener('DOMContentLoaded', function(e) {
