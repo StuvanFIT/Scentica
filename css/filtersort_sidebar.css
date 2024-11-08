@@ -16,7 +16,7 @@
     right: 0; /* Slide sidebar into view */
 }
 
-#overlay {
+#overlay-filterSort {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@
 }
 
 
-#overlay.active {
+#overlay-filterSort.active {
     opacity: 1;
     visibility: visible; /* Show overlay */
 }

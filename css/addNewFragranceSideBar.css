@@ -1,0 +1,43 @@
+#addFragranceSideBar {
+    position: fixed;
+    top: 0;
+    right: -100vw; /* Hidden initially, full width */
+    width: 90vw;   /* Full screen width */
+    height: 100vh;  /* Full screen height */
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#addFragranceSideBar.active {
+    right: 0; /* Slide the sidebar fully into view */
+}
+
+
+#overlay-addFragrance {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000; /* Behind the sidebar */
+}
+
+
+#overlay-addFragrance.active {
+    opacity: 1;
+    visibility: visible; /* Show overlay */
+}
+
+
+.close-addFragranceSideBar {
+    font-size:100px;
+}

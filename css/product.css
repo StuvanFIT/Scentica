@@ -171,3 +171,21 @@ while .first has z-index: auto (which is treated like 0).
     cursor:pointer;
     
 }
+
+#addNewFragrance {
+    padding: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid black;
+    float: right;
+    margin-right: 50px;
+    cursor:pointer;
+    
+}
+
+
+
+

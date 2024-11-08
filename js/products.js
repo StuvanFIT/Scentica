@@ -252,6 +252,8 @@ const filterSortProdBtn = document.getElementById("filter-sort-submit");
 filterSortProdBtn.addEventListener('click', retriveProductData);
 
 
+
+
 document.addEventListener('DOMContentLoaded', function(e) {
     retriveProductData();
 });

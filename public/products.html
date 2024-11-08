@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/filtersort_sidebar.css">
+    <link rel="stylesheet" href="../css/addNewFragranceSideBar.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/animatedElements.css">
@@ -34,10 +35,15 @@
         <h1>Fragrances</h1>
     </header>
 
-    <div class="filterSortContainer">
+    <div class="buttonContainer">
         <button id="filterSortButton" onclick="toggleFilterSortSideBar()">Filter & Sort</button>
+        <button id="addNewFragrance" onclick="toggleAddFragranceSideBar()">Add Fragrance</button>
     </div>
-    <div id="overlay" onclick="toggleFilterSortSideBar()"></div>
+
+    <div id="overlay-filterSort" onclick="toggleFilterSortSideBar()"></div>
+    <div id="overlay-addFragrance" onclick="toggleAddFragranceSideBar()"></div>
+
+
     <div id="sidebar">
         <span class="close">x</span>
         <h2 id="filterSortTitle">Filter & Sort</h2>
@@ -109,11 +115,15 @@
         </div>
 
 
-
+        
         <div class="submit-container">
             <button id="filter-sort-submit">SEE PRODUCTS</button>
         </div>
-        
+    </div>
+
+
+    <div id="addFragranceSideBar">
+        <span class="close-addFragranceSideBar">x</span>
 
     </div>
     
@@ -139,12 +149,28 @@
         function toggleFilterSortSideBar(){
             
             const sidebar = document.getElementById("sidebar");
-            const overlay = document.getElementById("overlay");
+            const overlay = document.getElementById("overlay-filterSort");
 
             sidebar.classList.toggle("active");
             overlay.classList.toggle("active");
 
             if (sidebar.classList.contains("active")){
+                document.body.style.overflow ="hidden"; //disabling scrolling
+            } else{
+                document.body.style.overflow =""; //re-enable the scrolling
+            }
+        }
+
+        
+        function toggleAddFragranceSideBar(){
+            
+            const addFragranceSideBar = document.getElementById("addFragranceSideBar");
+            const overlay = document.getElementById("overlay-addFragrance");
+
+            addFragranceSideBar.classList.toggle("active");
+            overlay.classList.toggle("active");
+
+            if (addFragranceSideBar.classList.contains("active")){
                 document.body.style.overflow ="hidden"; //disabling scrolling
             } else{
                 document.body.style.overflow =""; //re-enable the scrolling
