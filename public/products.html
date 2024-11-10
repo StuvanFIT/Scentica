@@ -123,7 +123,7 @@
 
 
     <div id="addFragranceSideBar">
-        <span class="close-addFragranceSideBar">x</span>
+        <span class="close-addFragranceSideBar" onclick="toggleAddFragranceSideBar()">x</span>
 
         <div id="steps-container" class="steps-container">
 
@@ -133,6 +133,8 @@
                 <input id="enter-description" type="text" placeholder="Description of Product">
                 <input id="enter-inspired-desc" type="text" placeholder="Inspired Quote">
                 <input id="enter-ingredients" type="text" placeholder="Ingredients of Product">
+                
+                
 
                 <button class="continue-btn" onclick="nextStep(2)">Continue</button>
 
@@ -140,8 +142,11 @@
 
             <div class="step" id="step-2" style='display:none'>
                 <h1>Step 2: Main Accords</h1>
-                <button class="previous-btn" onclick="nextStep(1)">Previous</button>
-                <button class="continue-btn" onclick="nextStep(3)">Continue</button>
+                
+                <div class="prev-cont-btn-container">
+                    <button class="previous-btn" onclick="nextStep(1)">Previous</button>
+                    <button class="continue-btn" onclick="nextStep(3)">Continue</button>
+                </div>
             </div>
 
             <div class="step" id="step-3" style='display:none'>
@@ -152,8 +157,11 @@
                 <input type="file" id="image3_URL">
                 <input type="file" id="image4_URL">
 
-                <button class="previous-btn" onclick="nextStep(2)">Previous</button>
-                <button class="continue-btn" onclick="handleAddProduct()">Submit</button>
+
+                <div class="prev-cont-btn-container">
+                    <button class="previous-btn" onclick="nextStep(2)">Previous</button>
+                    <button class="continue-btn" onclick="handleAddProduct()">Submit</button>
+                </div>
 
             </div>
 
@@ -252,8 +260,6 @@
         function nextStep(target_step){
             //Retrieve All Steps
             const allSteps = document.querySelectorAll(".step");
-
-            console.log(allSteps)
 
             //First, we hide all steps
             allSteps.forEach(step => {

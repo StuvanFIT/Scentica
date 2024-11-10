@@ -8,7 +8,7 @@
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease;
     z-index: 2000;
-    display: flex;
+    overflow-y: auto;
     flex-direction: column;
     padding: 20px;
 }
@@ -37,30 +37,47 @@
     visibility: visible; /* Show overlay */
 }
 
-
 .close-addFragranceSideBar {
-    font-size:70px;
+    font-size: 50px;
+    cursor: pointer;
+    display: inline-block; /* Ensures the span only takes up space for the "x" */
+    padding: 5px; /* Optional: Adds space around the "x" for easier clicking */
 }
+
 
 
 /*The section below is css for the add new fragrance feature and its steps*/
 
-.steps{
-    display:flex;
+.step{
     flex-direction:column;
+    background-color: lightgrey;
+}
+
+.step input{
+    margin-bottom: 90px;
+    height: 50px;
+    width: 100%;
+    
 }
 
 .continue-btn {
     padding: 8px 12px;
-    margin-top:20px;
+    margin-top:30px;
     cursor:pointer;
     background-color: rgb(0, 0, 0);
     color: white;
 }
 .previous-btn {
     padding: 8px 12px;
-    margin-top:20px;
+    margin-top:30px;
     cursor:pointer;
     background-color: rgb(0, 0, 0);
     color: white;
+    
 }
+.prev-cont-btn-container {
+    display: flex;
+    gap: 100px; /* Adds space between each button */
+}
+
+
