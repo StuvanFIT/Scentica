@@ -125,6 +125,40 @@
     <div id="addFragranceSideBar">
         <span class="close-addFragranceSideBar">x</span>
 
+        <div id="steps-container" class="steps-container">
+
+            <div class="step" id="step-1">
+                <h1>Step 1: Basic Information</h1>
+                <input id="enter-product-name" type="text" placeholder="Name of Product">
+                <input id="enter-description" type="text" placeholder="Description of Product">
+                <input id="enter-inspired-desc" type="text" placeholder="Inspired Quote">
+                <input id="enter-ingredients" type="text" placeholder="Ingredients of Product">
+
+                <button class="continue-btn" onclick="nextStep(2)">Continue</button>
+
+            </div>
+
+            <div class="step" id="step-2" style='display:none'>
+                <h1>Step 2: Main Accords</h1>
+                <button class="previous-btn" onclick="nextStep(1)">Previous</button>
+                <button class="continue-btn" onclick="nextStep(3)">Continue</button>
+            </div>
+
+            <div class="step" id="step-3" style='display:none'>
+                <h1>Step 3: Upload Images</h1>
+
+                <input type="file" id="image1_URL">
+                <input type="file" id="image2_URL">
+                <input type="file" id="image3_URL">
+                <input type="file" id="image4_URL">
+
+                <button class="previous-btn" onclick="nextStep(2)">Previous</button>
+                <button class="continue-btn" onclick="handleAddProduct()">Submit</button>
+
+            </div>
+
+        </div>
+
     </div>
     
 
@@ -166,9 +200,25 @@
             
             const addFragranceSideBar = document.getElementById("addFragranceSideBar");
             const overlay = document.getElementById("overlay-addFragrance");
-
+            
+            //Toggle the current status of the side bar
             addFragranceSideBar.classList.toggle("active");
             overlay.classList.toggle("active");
+
+            //Reset all input fields: This is done in both scenarios: hitting the exit button or pressing on new fragrance button
+            const allSteps = document.querySelectorAll('.step')
+            allSteps.forEach(step =>{
+                step.style.display = "none";
+            })
+
+           const allInputFields =  document.querySelectorAll(".step input[type='text'], .step input[type='file'] ");
+           allInputFields.forEach(inputField => {
+                inputField.value ='';
+           })
+
+            //Reset back to default step 1:
+            document.getElementById(`step-${1}`).style.display = "block";
+
 
             if (addFragranceSideBar.classList.contains("active")){
                 document.body.style.overflow ="hidden"; //disabling scrolling
@@ -197,6 +247,31 @@
                 }
             })
         }
+
+
+        function nextStep(target_step){
+            //Retrieve All Steps
+            const allSteps = document.querySelectorAll(".step");
+
+            console.log(allSteps)
+
+            //First, we hide all steps
+            allSteps.forEach(step => {
+                step.style.display = "none";
+            })
+
+            //Then we Show the target step we are at:
+            document.getElementById(`step-${target_step}`).style.display = "block";
+
+        }
+
+
+
+
+
+
+
+
     </script>
 
 </body>

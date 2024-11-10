@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     right: -100vw; /* Hidden initially, full width */
-    width: 90vw;   /* Full screen width */
+    width: 95vw;   /* Full screen width */
     height: 100vh;  /* Full screen height */
     background-color: #f4f4f4;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
@@ -39,5 +39,28 @@
 
 
 .close-addFragranceSideBar {
-    font-size:100px;
+    font-size:70px;
+}
+
+
+/*The section below is css for the add new fragrance feature and its steps*/
+
+.steps{
+    display:flex;
+    flex-direction:column;
+}
+
+.continue-btn {
+    padding: 8px 12px;
+    margin-top:20px;
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.previous-btn {
+    padding: 8px 12px;
+    margin-top:20px;
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
