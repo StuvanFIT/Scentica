@@ -1,168 +1,169 @@
 {
-  "all_products": [
-    {
-      "fragManuDesc": "Inspired By Paco Rabanne Invictus",
-      "gender": "male",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
-      "name": "Paco Rabanne Invictus Eau de Toilette",
-      "price": 99.99,
-      "rating": 5,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg"
-    },
-    {
-      "fragManuDesc": "Inspired By Versace Dylan Blue",
-      "gender": "male",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
-      "name": "Dylan Blue Pour Homme Eau de Toilette",
-      "price": 103,
-      "rating": 4,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
-    },
-    {
-      "fragManuDesc": "Inspired By Chanel Allure Homme Sport",
-      "gender": "male",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971915/90_R500010-R100MLS_RNUL_20_Eau_Frache_EDT_100_ml-Accessories-Versace-online-store_0_1_pnqtli.avif",
-      "name": "Versace Eau Fraiche Eau de Toilette",
-      "price": 69.99,
-      "rating": 5,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971920/versace-man-eau-fraiche-edt-travel-bag-set-gift-set-288676_k3g5cx.jpg"
-    },
-    {
-      "fragManuDesc": "Inspired By Versace Bright Crystal",
-      "gender": "female",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801511/90_R510032-R090MLS_RNUL_20_Bright_Crystal_EDT_90_ml-Accessories-Versace-online-store_1_1_kpwagk.avif",
-      "name": "Versace Bright Crystal Eau de Toilette",
-      "price": 85,
-      "rating": 4.5,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800645/versace-bright-crystal-absolu-edp-perfume-cologne-358030_y2ntrq.jpg"
-    },
-    {
-      "fragManuDesc": "Inspired By Bvlgari Omnia Crystalline",
-      "gender": "female",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801716/3020100671_01M_izg0qk.jpg",
-      "name": "Bvlgari Omnia Crystalline Eau de Toilette",
-      "price": 95,
-      "rating": 4.7,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800656/pixelcut-export_1_1a9b0c60-5ea7-4be2-83b5-7f2422ccdbae_cz4lw2.webp"
-    },
-    {
-      "fragManuDesc": "Inspired By Lady Million",
-      "gender": "female",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
-      "name": "Paco Rabanne Lady Million Eau de Parfum",
-      "price": 90,
-      "rating": 4.6,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800619/51jmUFi4FTL._AC_UF894_1000_QL80__hllip7.jpg"
-    },
-    {
-      "fragManuDesc": "Inspired By Azzaro Chrome",
-      "gender": "unisex",
-      "quantity":9,
-      "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973522/8da839c4-66bb-4424-8c0c-b4d3f0c928d9_bagrsy.jpg",
-      "name": "Calvin Klein CK One Eau de Toilette",
-      "price": 99.99,
-      "rating": 5,
-      "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973525/HalfWidth1_htsry4.webp"
-    }
-    
-  ],
-  "fragrances": {
-
-    "unisex":{
-
-      "Calvin Klein":[
-        {
-          "fragManuDesc": "Inspired By Azzaro Chrome",
-          "gender": "unisex",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973522/8da839c4-66bb-4424-8c0c-b4d3f0c928d9_bagrsy.jpg",
-          "name": "Calvin Klein CK One Eau de Toilette",
-          "price": 99.99,
-          "rating": 5,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973525/HalfWidth1_htsry4.webp"
-        }
-      ]
-
-    },
+  "categories": {
     "men": {
-      "PacoRabanne": [
-        {
-          "fragManuDesc": "Inspired By Paco Rabanne Invictus",
-          "gender": "male",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
-          "name": "Paco Rabanne Invictus Eau de Toilette",
-          "price": 99.99,
-          "rating": 5,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg"
-        }
-      ],
-      "Versace": [
-        {
-          "fragManuDesc": "Inspired By Versace Dylan Blue",
-          "gender": "male",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
-          "name": "Dylan Blue Pour Homme Eau de Toilette",
-          "price": 103,
-          "rating": 4,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp"
-        },
-        {
-          "fragManuDesc": "Inspired By Chanel Allure Homme Sport",
-          "gender": "male",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971915/90_R500010-R100MLS_RNUL_20_Eau_Frache_EDT_100_ml-Accessories-Versace-online-store_0_1_pnqtli.avif",
-          "name": "Versace Eau Fraiche Eau de Toilette",
-          "price": 69.99,
-          "rating": 5,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971920/versace-man-eau-fraiche-edt-travel-bag-set-gift-set-288676_k3g5cx.jpg"
-        }
-      ]
+      "-OBPMuOpy_fkiYNct6wj": {
+        "-OBPMuOpy_fkiYNct6wj": true
+      },
+      "-OBPfaoV69s1ZUKF_waL": {
+        "-OBPfaoV69s1ZUKF_waL": true
+      },
+      "-OBPgVYkUPS5zIf77w0T": {
+        "-OBPgVYkUPS5zIf77w0T": true
+      }
+    },
+    "unisex": {
+      "-OBPjUzc7HrO-sTXxAXM": {
+        "-OBPjUzc7HrO-sTXxAXM": true
+      }
     },
     "women": {
-      "Bvlgari": [
-        {
-          "fragManuDesc": "Inspired By Bvlgari Omnia Crystalline",
-          "gender": "female",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800651/155999920_1_720x928_lt1yll.webp",
-          "name": "Bvlgari Omnia Crystalline Eau de Toilette",
-          "price": 95,
-          "rating": 4.7,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800656/pixelcut-export_1_1a9b0c60-5ea7-4be2-83b5-7f2422ccdbae_cz4lw2.webp"
-        }
+      "-OBPiNz2Il5iXOr9aCIg": {
+        "-OBPiNz2Il5iXOr9aCIg": true
+      },
+      "-OBPihTQqaPxECTgjIIE": {
+        "-OBPihTQqaPxECTgjIIE": true
+      },
+      "-OBPj28gGWTlCTB2Ljip": {
+        "-OBPj28gGWTlCTB2Ljip": true
+      }
+    }
+  },
+  "products": {
+    "-OBPMuOpy_fkiYNct6wj": {
+      "brand": "Paco Rabanne",
+      "description": "A heroic woody-fresh fragrance where the vibrant meets the muscular. Invictus perfume embodies two forces that collide: biting freshness and animal sensuality. The sea winds dominate. Grapefruit bursts. The virile woods prevail and ignite. The scent of magnetic patchouli, sensual guaiac wood and ambergris. Double victory!",
+      "gender": "Men",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), BENZYL SALICYLATE, LIMONENE, LINALOOL, COUMARIN, BUTYL METHOXYDIBENZOYLMETHANE, ETHYLHEXYL SALICYLATE, CITRONELLOL, GERANIOL, ALPHA-ISOMETHYL IONONE, CITRAL, EUGENOL, BENZYL BENZOATE, CINNAMAL, BENZYL ALCOHOL, CI 60730 (EXT. VIOLET 2), CI 19140 (YELLOW 5), CI 14700 (RED 4), CI 42090 (BLUE 1).",
+      "inspiredQuote": "Inspired By Paco Rabanne Invictus",
+      "mainAccords": [
+        "Woody"
       ],
-      "PacoRabanne": [
-        {
-          "fragManuDesc": "Inspired By Lady Million",
-          "gender": "female",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
-          "name": "Paco Rabanne Lady Million Eau de Parfum",
-          "price": 90,
-          "rating": 4.6,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800619/51jmUFi4FTL._AC_UF894_1000_QL80__hllip7.jpg"
-        }
+      "name": "Paco Rabanne Invictus",
+      "productID": "-OBPMuOpy_fkiYNct6wj",
+      "quantity":9,
+      "rating":5
+    },
+    "-OBPfaoV69s1ZUKF_waL": {
+      "description": "A bold and masculine fragrance, Dylan Blue contains the sensual scents of the Mediterranean.   The fragrance reveals notes of ambergris, revisited with bergamot and grapefruit. The earthy and citrusy olfactory notes are enveloped by black pepper, papyrus and incense, together with mineral musk, Tonka beans and saffron.   The gritty perfume is kept in a blue geometric bottle embellished with gold-colored details, evoking the sea and the sand of the Mediterranean.  Fragrance Note: Wood",
+      "gender": "Men",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL, PARFUM / FRAGRANCE, AQUA/WATER/EAU, DIPROPYLENE GLYCOL, LIMONENE, LINALOOL, BENZYL SALICYLATE, BENZYL ALCOHOL, BUTYL METHOXYDIBENZOYLMETHANE, HYDROXICITRONELLAL, METHYL ANTHRANILATE, CITRONELLOL, ALPHA-ISOMETHYL IONONE, COUMARIN, GERANIOL, ISOEUGENOL, BENZYL BENZOATE, CITRAL, TRIE(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, EUGENOL, FARNESOL, CI 60730 / EXT. VIOLET 2, CI 17200 / RED 33. 560528 07",
+      "inspiredQuote": "Inspired By Versace Dylan Blue",
+      "mainAccords": [
+        "Woody"
       ],
-      "Versace": [
-        {
-          "fragManuDesc": "Inspired By Versace Bright Crystal",
-          "gender": "female",
-          "quantity":9,
-          "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800639/61UdVadaEaL._AC_UF894_1000_QL80__ceco9k.jpg",
-          "name": "Versace Bright Crystal Eau de Toilette",
-          "price": 85,
-          "rating": 4.5,
-          "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800645/versace-bright-crystal-absolu-edp-perfume-cologne-358030_y2ntrq.jpg"
-        }
-      ]
+      "name": "Dylan Blue Pour Homme",
+      "productID": "-OBPfaoV69s1ZUKF_waL",
+      "quantity":9,
+      "rating":5
+    },
+    "-OBPgVYkUPS5zIf77w0T": {
+      "description": "In the words of Donatella Versace, \"Versace Man is synonymous with elegance and seduction. It is dedicated to the modern man, full of charisma and self-confidence.\" A surprisingly fresh fragrance with bubbly notes and an amber and musk base for a mysterious, and skin-deep sensation.",
+      "gender": "Men",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971915/90_R500010-R100MLS_RNUL_20_Eau_Frache_EDT_100_ml-Accessories-Versace-online-store_0_1_pnqtli.avif",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971920/versace-man-eau-fraiche-edt-travel-bag-set-gift-set-288676_k3g5cx.jpg",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL DENAT. (SD ALCOHOL 39-C.), PARFUM (FRAGRANCE), LIMONENE, LINALOOL, ETHYLHEXYL METHOXYCINNAMATE, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, CITRAL, CITRONELLOL, GERANIOL, ISOEUGENOL.",
+      "inspiredQuote": "Inspired By Chanel Allure Homme Sport",
+      "mainAccords": [
+        "Woody",
+        "Citrus"
+      ],
+      "name": "Versace Eau Fraiche",
+      "productID": "-OBPgVYkUPS5zIf77w0T",
+      "quantity":9,
+      "rating":5
+    },
+    "-OBPiNz2Il5iXOr9aCIg": {
+      "description": "Absolute sensuality. Absolute transparency. Absolute brightness. An absolute temptation. Versace introduces Bright Crystal Absolu, the intense version of one of the most beloved jewel-fragrances in the world, where the essence of Bright Crystal is enhanced to the extreme. A fragrance made even more intoxicating by its enhanced olfactory concentrations and prolonged persistence. For a woman who entrusts her femininity to the timeless seductive power of Bright Crystal, in harmony with versace glamour.",
+      "gender": "Women",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801511/90_R510032-R090MLS_RNUL_20_Bright_Crystal_EDT_90_ml-Accessories-Versace-online-store_1_1_kpwagk.avif",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800645/versace-bright-crystal-absolu-edp-perfume-cologne-358030_y2ntrq.jpg",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL DENAT. (SD ALCOHOL 39-C.), PARFUM (FRAGRANCE), AQUA (WATER), ETHYLHEXYL METHOXYCINNAMATE, LINALOOL, CITRONELLOL, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, LIMONENE",
+      "inspiredQuote": "Inspired By Versace Bright Crystal",
+      "mainAccords": [
+        "Floral",
+        "Musky"
+      ],
+      "name": "Versace Bright Crystal",
+      "productID": "-OBPiNz2Il5iXOr9aCIg",
+      "quantity":9,
+      "rating":5
+    },
+    "-OBPihTQqaPxECTgjIIE": {
+      "description": "Evoking the purity and clarity of crystal, the iconic BVLGARI Omnia Crystalline is a luminous Eau de Toilette signed by Master Perfumer Alberto Morillas",
+      "gender": "Women",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801716/3020100671_01M_izg0qk.jpg",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800656/pixelcut-export_1_1a9b0c60-5ea7-4be2-83b5-7f2422ccdbae_cz4lw2.webp",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL DENAT. (SD ALCOHOL 39-C), PARFUM (FRAGRANCE), AQUA (WATER), ETHYLHEXYL METHOXYCINNAMATE, LIMONENE, LINALOOL, BUTYL METHOXYDIBENZOYLMETHANE, ETHYLHEXYL SALICYLATE, GERANIOL, CITRONELLOL, ALPHA-ISOMETHYL IONONE, CITRAL, BHT",
+      "inspiredQuote": "Inspired By Bvlgari Omnia Crystalline",
+      "mainAccords": [
+        "Floral"
+      ],
+      "name": "Bvlgari Omnia Crystalline ",
+      "productID": "-OBPihTQqaPxECTgjIIE",
+      "quantity":9,
+      "rating":5
+    },
+    "-OBPj28gGWTlCTB2Ljip": {
+      "description": "Play with fire and obey no one. Except for his fantasies. Dazzle, like nothing else. And bring luck. Lady MILLION creates a feeling of vertigo. A perfume for a cheeky girl, under the spotlight... a golden girl. Lady MILLION is a woody, floral fragrance, combining fresh, but carnal flowers with sexy patchouli. A fresh and addictive scent, seductive, sensual. Disarming!",
+      "gender": "Women",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800619/51jmUFi4FTL._AC_UF894_1000_QL80__hllip7.jpg",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), LIMONENE, BENZYL SALICYLATE, ALPHA-ISOMETHYL IONONE, BENZOTRIAZOLYL DODECYL P-CRESOL, HYDROXYCITRONELLAL, BUTYLMPHTHALIMIDE, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, HEXYL CINNAMAL, LINALOOL, ISOPROPYLPHTHALIMIDE, COUMARIN, CITRONELLOL, GERANIOL, CITRAL, BENZYL ALCOHOL, ISOEUGENOL, CI 14700 (RED 4), CI 19140 (YELLOW 5), CI 61570 (GREEN 5), CI 15985 (YELLOW 6)",
+      "inspiredQuote": "Inspired By Lady Million",
+      "mainAccords": [
+        "Floral"
+      ],
+      "name": "Paco Rabanne Lady Million",
+      "productID": "-OBPj28gGWTlCTB2Ljip",
+      "quantity":9,
+      "rating":5
+    },
+    "-OBPjUzc7HrO-sTXxAXM": {
+      "description": "Purity. Unity. Sensuality. Calvin Klein pioneered the unisex category as ck one entered the market as the first “shared” fragrance, defying expectations and breaking boundaries. Clean and contemporary with a refreshing green tea signature throughout, it is intended to be used lavishly.",
+      "gender": "Unisex",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973522/8da839c4-66bb-4424-8c0c-b4d3f0c928d9_bagrsy.jpg",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973525/HalfWidth1_htsry4.webp",
+        "image3": "None",
+        "image4": "None"
+      },
+      "ingredients": "ALCOHOL DENAT., AQUA/WATER/EAU, PARFUM/FRAGRANCE, LINALOOL, LIMONENE, CITRONELLOL, COUMARIN, GERANIOL, HYDROXYCITRONELLAL, CITRAL, TETRASODIUM EDTA, ISOEUGENOL",
+      "inspiredQuote": "Inspired by Calvin Klein CK One",
+      "mainAccords": [
+        "Musky"
+      ],
+      "name": "Calvin Klein CK One",
+      "productID": "-OBPjUzc7HrO-sTXxAXM",
+      "quantity":9,
+      "rating":5
     }
   }
 }

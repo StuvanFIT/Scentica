@@ -130,13 +130,32 @@
             <div class="step" id="step-1">
                 <h1>Step 1: Basic Information</h1>
                 <input id="enter-product-name" type="text" placeholder="Name of Product">
+
+                <div class="chooseGenderContainer">
+                    <label>
+                        <input type="radio" name="gender" value="Men"> Men
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="gender" value="Women"> Women
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="gender" value="Unisex"> Unisex
+                    </label>
+                </div>
+
+
+
                 <input id="enter-description" type="text" placeholder="Description of Product">
                 <input id="enter-inspired-desc" type="text" placeholder="Inspired Quote">
                 <input id="enter-ingredients" type="text" placeholder="Ingredients of Product">
                 
                 
 
-                <button class="continue-btn" onclick="nextStep(2)">Continue</button>
+                <div class="prev-cont-btn-container">
+                    <button class="continue-btn" onclick="nextStep(2)">Continue</button>
+                </div>
 
             </div>
 

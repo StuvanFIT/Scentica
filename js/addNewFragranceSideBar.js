@@ -10,7 +10,9 @@ function handleAddProduct(){
     const descProd = document.getElementById("enter-description").value;
     const inspiredQuote = document.getElementById("enter-inspired-desc").value;
     const ingredients = document.getElementById("enter-ingredients").value;
+    const gender = document.querySelector(".chooseGenderContainer input[type='radio']:checked").value;
 
+    console.log(gender)
     console.log(prodName)
     console.log(descProd)
     console.log(inspiredQuote)
@@ -47,6 +49,7 @@ function handleAddProduct(){
     const newProduct = {
 
         name: prodName,
+        gender:gender,
         description:descProd,
         inspiredQuote: inspiredQuote,
         ingredients: ingredients,
@@ -65,8 +68,30 @@ function handleAddProduct(){
     const productRef = ref(database, 'products/');
 
     push(productRef, newProduct)
-    .then(() =>{
+    .then((productSnapshot) =>{
         console.log("New Product has been pushed to the products database!");
+
+        const productId = productSnapshot.key;
+        let genderPath = `categories/unisex`;
+
+        if(gender === "Men"){
+            genderPath = `categories/men/`;
+        } else if(gender === "Women"){
+            genderPath = `categories/women/`;
+        }
+
+        const genderRef= ref(database, genderPath + `${productId}`);
+       
+
+        set(genderRef, { [productId]: true })
+            .then(() => {
+                console.log(`Product added to ${gender} category with ID: ${productId}`);
+            })
+            .catch((error) => {
+                console.error("Error adding product to category:", error);
+            });
+
+        
     })
     .catch((error) =>{
         console.error("Error: Did not add product sucessfully...", error);

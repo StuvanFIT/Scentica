@@ -3,7 +3,7 @@ import { getDatabase, ref, set, push, child, onValue, remove, get } from "https:
 
 
 
-const dbRef = ref(database, 'all_products/');
+const dbRef = ref(database, 'products/');
 
 
 
@@ -17,20 +17,22 @@ function retriveProductData(){
         if (snapshot.exists){
             const productData = snapshot.val();
 
-            filterData(productData);
+
+
+            filterData(Object.values(productData));
         }
     });
 
 }
 
 function isMenProduct(product){
-    return product.gender === "male" 
+    return product.gender === "Men" 
 }
 function isWomenProduct(product){
-    return product.gender === "female" 
+    return product.gender === "Women" 
 }
 function isUnisexProduct(product){
-    return product.gender === "unisex" 
+    return product.gender === "Unisex" 
 }
 function inStock(product){
     return product.quantity >0;
@@ -121,15 +123,19 @@ function sortData(filteredProductData){
 
 
 function populateProducts(productData){
+    
 
     const frag = document.getElementsByClassName("fragrances")[0];
     frag.innerHTML ="";
 
     productData.forEach(product => {
 
+        console.log(product)
+
 
 
         if (product){
+
             
             const frag = document.getElementsByClassName("fragrances")[0];
 
@@ -145,7 +151,7 @@ function populateProducts(productData){
             imageContainer.className = "image-container";
 
             const image1 = document.createElement("img");
-            image1.src= product.imageURL;
+            image1.src= product.images.image1;
             image1.alt = product.name;
             image1.className = "card-image";
 
@@ -158,7 +164,7 @@ function populateProducts(productData){
             })
 
             const image2 = document.createElement("img");
-            image2.src= product.transitionURL;
+            image2.src= product.images.image2;
             image2.alt = product.name;
             image2.className = "hover-image";
 
@@ -182,7 +188,7 @@ function populateProducts(productData){
 
             //Fragrance Manufacturer:
             const fragManuDesc = document.createElement("h5");
-            fragManuDesc.textContent = product.fragManuDesc;
+            fragManuDesc.textContent = product.inspiredQuote;
             fragManuDesc.className = "card-manufacturer";
             
             //Fragrance Review Rating:
@@ -205,10 +211,7 @@ function populateProducts(productData){
             }
                         
             
-            //Fragrance Price:
-            const fragPrice = document.createElement("h3");
-            fragPrice.textContent = `$${product.price}`;
-            fragPrice.className = "card-price";
+
 
             //Add to cart:
             const addToCart = document.createElement("div");
@@ -220,7 +223,7 @@ function populateProducts(productData){
             fragInfo.appendChild(name);
             fragInfo.appendChild(fragManuDesc);
             fragInfo.appendChild(rating);
-            fragInfo.appendChild(fragPrice);
+
             
             fragItem.appendChild(fragInfo);
 
