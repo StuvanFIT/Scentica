@@ -142,6 +142,28 @@
 
             <div class="step" id="step-2" style='display:none'>
                 <h1>Step 2: Main Accords</h1>
+
+                <div class="checkbox-container">
+                    <label class="accordContainer"> 
+                        <input type="checkbox" value="Woody"> <p id="accordText">Woody</p>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="accordContainer">
+                        <input type="checkbox" value="Floral"> <p id="accordText">Floral</p>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="accordContainer">
+                        <input type="checkbox" value="Citrus"> <p id="accordText">Citrus</p>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="accordContainer">
+                        <input type="checkbox" value="Musky"> <p id="accordText">Musky</p>
+                        <span class="checkmark"></span>
+                    </label>
+                    <!-- Add more checkboxes as needed -->
+                </div>
+
+  
                 
                 <div class="prev-cont-btn-container">
                     <button class="previous-btn" onclick="nextStep(1)">Previous</button>
@@ -150,17 +172,17 @@
             </div>
 
             <div class="step" id="step-3" style='display:none'>
-                <h1>Step 3: Upload Images</h1>
+                <h1>Step 3: Upload Images (URL)</h1>
 
-                <input type="file" id="image1_URL">
-                <input type="file" id="image2_URL">
-                <input type="file" id="image3_URL">
-                <input type="file" id="image4_URL">
+                <input type="text" id="image1_URL">
+                <input type="text" id="image2_URL">
+                <input type="text" id="image3_URL">
+                <input type="text" id="image4_URL">
 
 
                 <div class="prev-cont-btn-container">
                     <button class="previous-btn" onclick="nextStep(2)">Previous</button>
-                    <button class="continue-btn" onclick="handleAddProduct()">Submit</button>
+                    <button class="continue-btn submit-new-product" >Submit</button>
                 </div>
 
             </div>
@@ -184,6 +206,7 @@
     <!--Import the firebase CDN Module-->
     <script type="module" src="../js/firebaseConfig.js"></script>
     <script type="module" src="/js/products.js"></script>
+    <script type="module" src="/js/addNewFragranceSideBar.js"></script>
     
 
     <script>
@@ -219,10 +242,19 @@
                 step.style.display = "none";
             })
 
-           const allInputFields =  document.querySelectorAll(".step input[type='text'], .step input[type='file'] ");
-           allInputFields.forEach(inputField => {
-                inputField.value ='';
-           })
+     
+
+
+
+
+            const allInputFields =  document.querySelectorAll(".step input[type='text'], .step input[type='file']");
+            allInputFields.forEach(inputField => {
+                    inputField.value ='';
+            })
+            const allCheckBoxes =  document.querySelectorAll(".step input[type='checkbox']");
+            allCheckBoxes.forEach(checkbox => {
+                checkbox.checked = false;
+            })
 
             //Reset back to default step 1:
             document.getElementById(`step-${1}`).style.display = "block";

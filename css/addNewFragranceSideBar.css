@@ -48,17 +48,66 @@
 
 /*The section below is css for the add new fragrance feature and its steps*/
 
-.step{
+.steps-container .step{
+    display:flex;
     flex-direction:column;
     background-color: lightgrey;
 }
 
-.step input{
+.steps-container .step input{
     margin-bottom: 90px;
     height: 50px;
     width: 100%;
     
 }
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    gap: 50px; /* Space between each checkbox group */
+    margin-bottom: 30px;
+    font-size: 30px;
+    bottom:50px;
+}
+
+.checkbox-container label {
+    display: inline-flex;
+    align-items: center;
+}
+
+#accordText {
+    display: inline;
+    transform: translateY(-40px); /* Adjust this value as needed */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Hide the default checkbox */
+.accordContainer input[type="checkbox"] {
+    appearance: none;  /* Hide the default checkbox */
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+/* Style the custom checkbox when checked */
+.accordContainer input[type="checkbox"]:checked {
+    background-color: #000000;  /* Customize this color */
+    border: none;
+    
+}
+.accordContainer input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    left: 10px;
+    top: 4px;
+}
+
 
 .continue-btn {
     padding: 8px 12px;

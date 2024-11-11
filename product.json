@@ -1,0 +1,61 @@
+{
+    "products": {
+      "product_id_1": {
+        "name": "Paco Rabanne Invictus Eau de Toilette",
+        "fragManuDesc": "Inspired By Paco Rabanne Invictus",
+        "gender": "male",
+        "quantity": 9,
+        "price": 99.99,
+        "rating": 5,
+        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
+        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg",
+        "categories": {
+          "men": true,
+          "best_seller": true,
+          "inspired_by": "Paco Rabanne Invictus"
+        }
+      },
+      "product_id_2": {
+        "name": "Dylan Blue Pour Homme Eau de Toilette",
+        "fragManuDesc": "Inspired By Versace Dylan Blue",
+        "gender": "male",
+        "quantity": 9,
+        "price": 103,
+        "rating": 4,
+        "imageURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
+        "transitionURL": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp",
+        "categories": {
+          "men": true,
+          "best_seller": false,
+          "inspired_by": "Versace Dylan Blue"
+        }
+      }
+    },
+    "categories": {
+      "men": {
+        "product_id_1": true,
+        "product_id_2": true
+      },
+      "women": {
+        "product_id_3": true
+      },
+      "best_seller": {
+        "product_id_1": true
+      },
+      "unisex": {
+        "product_id_4": true
+      }
+    },
+    "brands": {
+      "PacoRabanne": {
+        "product_id_1": true
+      },
+      "Versace": {
+        "product_id_2": true
+      },
+      "Chanel": {
+        "product_id_3": true
+      }
+    }
+  }
+  
