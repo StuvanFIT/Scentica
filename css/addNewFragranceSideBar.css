@@ -75,6 +75,9 @@
     align-items: center;
 }
 
+
+
+
 #accordText {
     display: inline;
     transform: translateY(-40px); /* Adjust this value as needed */

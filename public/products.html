@@ -25,10 +25,23 @@
 
     
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html" class="active">Products</a>
-        <a href="index.html">About</a>
-        <a href="index.html">Careers</a>
+
+        <div class="navdiv">
+            <div class="logo"><a href="#">Scentica</a> </div>
+
+            <ul>
+                <li> <a href="#">HOME</a></li>
+                <li> <a href="#">BRANDS</a></li>
+                <li> <a href="#">ABOUT US</a></li>
+                <li> <a href="#">CONTACT US</a></li>
+                <li> <a href="#">USER</a></li>
+                <button id="signIn"><a href="#">Sign In</a> </button>
+                <button id="signUp"><a href="#">Sign Up</a> </button>
+            </ul>
+
+
+        </div>
+
     </nav>
 
     <header>
@@ -143,6 +156,25 @@
                     <label>
                         <input type="radio" name="gender" value="Unisex"> Unisex
                     </label>
+                </div>
+
+
+                <div class="chooseBrandContainer">
+                    <label>Brand</label>
+
+                    <select id="selectBrand">
+                        <option value="">None</option>
+                        <option value="Versace">Versace</option>
+                        <option value="Bvlgari">Bvlgari</option>
+                        <option value="Paco Rabanne">Paco Rabanne</option>
+                        <option value="Calvin Klein">Calvin Klein</option>
+                        <option value="Mont Blanc">Mont Blanc</option>
+                        <option value="Tom Ford">Tom Ford</option>
+                        <option value="Jimmy Choo">Jimmy Choo</option>
+                    </select>
+                    
+                    <input id="otherBrand" type="text" placeholder="Only provide input if the brand does not appear above..." disabled>
+
                 </div>
 
 

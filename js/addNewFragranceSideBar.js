@@ -86,6 +86,24 @@ function handleAddProduct(){
         set(genderRef, { [productId]: true })
             .then(() => {
                 console.log(`Product added to ${gender} category with ID: ${productId}`);
+                
+
+                const selectedBrand = document.getElementById("selectBrand").value;
+                let brandPath = `brands/` + `${selectedBrand}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             })
             .catch((error) => {
                 console.error("Error adding product to category:", error);
@@ -107,6 +125,22 @@ function handleAddProduct(){
 
 
 //Add Event Listeners:
+
+const selectBrand = document.getElementById("selectBrand");
+const otherBrandField = document.getElementById("otherBrand");
+
+selectBrand.addEventListener('change', (e) => {
+
+    console.log(selectBrand.value)
+    if (selectBrand.value === "") {
+        // Enable the input field for other brands
+        otherBrandField.disabled = false;
+    } else {
+        // Disable the input field for other brands
+        otherBrandField.disabled = true;
+    }
+});
+
 
 const addNewProductBtn = document.querySelector(".submit-new-product");
 addNewProductBtn.addEventListener('click', (e) =>{

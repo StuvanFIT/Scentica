@@ -24,7 +24,7 @@ h1 {
 .card {
     background-color: #fff;
     width: 400px; /* Set a fixed width for each card */
-    height: 590px; /* Set a fixed height for each card */
+    height: 540px; /* Set a fixed height for each card */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out 0.5s ease;
@@ -145,7 +145,7 @@ while .first has z-index: auto (which is treated like 0).
 }
 
 .star-rating {
-    margin: 5px 0; /* Add some margin for spacing */
+    margin: 2px 0; /* Add some margin for spacing */
 }
 
 .star {
