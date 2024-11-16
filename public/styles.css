@@ -1,0 +1,10 @@
+
+/*Why 0.5em in padding is relative to the <h1>'s font size:
+For text-related properties like font-size, em is relative to the
+parent’s font size. However, for box model properties like padding, margin, or width, em is relative to the element’s computed font-size.*/
+h1{
+    border: 2px dashed red;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+

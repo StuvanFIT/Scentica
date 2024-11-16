@@ -1,3 +1,11 @@
+body{
+    background-color:white;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
 .topContent {
     margin-top:40px;
     display: flex;
@@ -11,7 +19,6 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     width: 55%; /* Adjust as needed */
-    height: 400px;
 }
 
 .gallery-image {
@@ -21,19 +28,17 @@
 
 .productDetailsContainer {
     width: 45%; /* Adjust as needed to fit next to the gallery */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-left:50px;
+
 }
 
 
 .middleContent {
     height:500px;
-    margin-top:1100px;
+
     display: flex;
     gap: 20px; /* Space between gallery and product details */
     align-items: flex-start; /* Align items at the top */
-    background-color: black;
-    color:white;
+    background-color: rgb(243, 243, 243);
+    color:rgb(0, 0, 0);
 }
