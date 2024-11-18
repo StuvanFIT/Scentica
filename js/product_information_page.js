@@ -58,8 +58,28 @@ function displayImageGallery(currentProduct){
 function displayProdDetails(currentProduct){
 
     const prodTitle = document.getElementById("prodTitle");
-    console.log(prodTitle)
     prodTitle.textContent = currentProduct.name;
+
+
+    const prodDesc = document.getElementById("prodDesc");
+    prodDesc.textContent = currentProduct.description;
+
+
+    //Create the size options buttons:
+    console.log(currentProduct)
+    const volumeOptions = document.querySelector(".volumeOptions");
+    console.log(volumeOptions)
+    currentProduct.sizeOptions.forEach(size =>{
+        console.log(size)
+
+        const btn = document.createElement("button");
+        btn.textContent = `${size}ml`;
+        btn.classList.add("sizeButton");
+
+        volumeOptions.appendChild(btn);
+        
+
+    })
 
     
 }
