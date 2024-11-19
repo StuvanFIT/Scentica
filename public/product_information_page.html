@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/filtersort_sidebar.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/product_information_page.css">
 
     <link rel="stylesheet" href="../css/animatedElements.css">
@@ -49,23 +48,57 @@
     
             <article class="productDetailsContainer">
                 <h1 id="prodTitle"></h1>
+                <p id="prodType"></p>
 
-                <p id="prodDesc"></p>
+                
 
                 <div class="volumeOptions">
 
+                
+
                 </div>
 
-                <button>ADD TO CART</button>
+                <div class="buttonContainer">
+                    <input type="number" class="addQuantity" max=9 min=0>
+                    <button class="addToCartBtn">ADD TO CART</button>
+                </div>
+                
+         
+
+                <div class="wrapper">
+                    <p class="infoHeading">Description</p>
+                    <button class="expandButton">+</button>
+                </div>
+                
+                <div class="wrapper-content">
+                    <p id="prodDesc"></p>
+                </div>
+
+                
+                <div class="wrapper">
+                    <p class="infoHeading">Ingredients</p>
+                    <button class="expandButton">+</button>
+                </div>
+                <div class="wrapper-content">
+                    <p id="prodIngredients"></p>
+                </div>
+                
+                
+
+
+                
+ 
+       
+
 
             </article>
         </section>
     
         <!-- Middle Section: Accord Images -->
         <section class="middleContent">
-            <h2>Accord Images</h2>
-            <div class="accordImages">
-                <!-- Accord-related images -->
+            
+            <div class="fragranceNotesContainer">
+                
             </div>
         </section>
     </main>

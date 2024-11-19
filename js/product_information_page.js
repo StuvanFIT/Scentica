@@ -64,6 +64,14 @@ function displayProdDetails(currentProduct){
     const prodDesc = document.getElementById("prodDesc");
     prodDesc.textContent = currentProduct.description;
 
+    
+    const prodIngredients = document.getElementById("prodIngredients");
+    prodIngredients.textContent = currentProduct.ingredients;
+
+
+    const prodType = document.getElementById("prodType");
+    prodType.textContent = "Eau De Toilette";
+
 
     //Create the size options buttons:
     console.log(currentProduct)
@@ -77,12 +85,43 @@ function displayProdDetails(currentProduct){
         btn.classList.add("sizeButton");
 
         volumeOptions.appendChild(btn);
-        
-
     })
 
     
 }
+
+
+
+
+var elements = document.getElementsByClassName("expandButton");
+console.log(elements);
+
+// Add event listeners to each button
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", function () {
+        console.log(this);
+        
+        // Find the closest .wrapper parent, then select the .wrapper-content inside it
+        const wrapper = this.closest('.wrapper').nextElementSibling;
+    
+        console.log(wrapper);
+        
+        // Toggle the "visible" class on the wrapper-content
+        wrapper.classList.toggle("visible");
+
+        // Change the button text based on visibility
+        if (wrapper.classList.contains("visible")) {
+            this.textContent = "-";  // Collapse icon when content is shown
+        } else {
+            this.textContent = "+";  // Expand icon when content is hidden
+        }
+    });
+}
+
+
+
+
+
 
 
 
