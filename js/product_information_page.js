@@ -93,33 +93,33 @@ function displayProdDetails(currentProduct){
 
 
 
-var elements = document.getElementsByClassName("expandButton");
-console.log(elements);
+var wrappers = document.getElementsByClassName("wrapper");
 
 // Add event listeners to each button
-for (var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener("click", function () {
-        console.log(this);
+for (var i = 0; i < wrappers.length; i++) {
+    wrappers[i].addEventListener("click", function (e) {
+        e.stopPropagation;
         
         // Find the closest .wrapper parent, then select the .wrapper-content inside it
-        const wrapper = this.closest('.wrapper').nextElementSibling;
+        const wrapperContent = this.nextElementSibling;
     
-        console.log(wrapper);
-        
         // Toggle the "visible" class on the wrapper-content
-        wrapper.classList.toggle("visible");
+        wrapperContent.classList.toggle("visible");
 
         // Change the button text based on visibility
-        if (wrapper.classList.contains("visible")) {
-            this.textContent = "-";  // Collapse icon when content is shown
+        console.log(this)
+        const expandButton = this.querySelector(".expandButton");
+        console.log(expandButton)
+
+
+        if (wrapperContent.classList.contains("visible")) {
+            console.log("k")
+            expandButton.textContent = "-";  // Collapse icon when content is shown
         } else {
-            this.textContent = "+";  // Expand icon when content is hidden
+            expandButton.textContent = "+";  // Expand icon when content is hidden
         }
     });
 }
-
-
-
 
 
 

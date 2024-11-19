@@ -1,6 +1,6 @@
 body{
     background-color:white;
-    font-family: Helvetica, sans-serif;
+    font-family:  Helvetica, sans-serif;
 }
 
 h1 {
@@ -82,7 +82,12 @@ h1 {
 .addToCartBtn {
     width:80%;
     padding:15px;
-  
+    color:white;
+    font-weight:bold;
+    background-color: black;
+    border:none;
+    cursor:pointer;
+
 }
 
 .wrapper {
@@ -92,6 +97,12 @@ h1 {
     padding:10px;
     margin-top:20px;
     transition: opacity 0.3s ease-in-out;
+    cursor:pointer;
+    transition: border-color 0.3s ease;
+}
+
+.wrapper:hover {
+    border-top: 2px solid black;
 }
 
 .wrapper-content.visible {
@@ -99,6 +110,8 @@ h1 {
     display:block;
     opacity:1;
 }
+
+
 .wrapper-content {
     display:none;
 }
@@ -113,6 +126,13 @@ h1 {
 .infoHeading {
     font-weight: bold;
     flex-grow: 1;
+}
+
+.expandButton {
+    font-size: 30px;
+    background-color: white;
+    border:none;
+    cursor:pointer;
 }
 
 
