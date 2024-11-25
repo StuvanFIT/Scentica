@@ -196,18 +196,38 @@ h1 {
     text-align: left;
     border:none;
     outline:none;
-    transition: 0.4s;
+    transition: 0.5s;
+    border-bottom: 1px solid black;
+}
+.accordion-heading {
+    font-family: "Jost", sans-serif;
+    font-size: 30px;
 }
 
 .active, .accordion:hover {
-    background-color: aliceblue;
+    background-color: rgb(192, 196, 196);
+}
+
+
+.accordion:after {
+    content: '\02795';
+    font-size: 20px;
+    color: black;
+    float:right;
+    margin-left:5px;
+}
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+    padding: 0px 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
 }
 
 
@@ -220,13 +240,16 @@ h1 {
 
 
 
-.middleContent, .fragranceNotesContainer, .perfume-pyramid {
+
+
+.middleContent, .fragranceNotesContainer{
     min-height: 30vh;
     padding: 5px 5px;
 }
 
 .noteLevelHeader {
     text-align: center;
+    font-size: large;
 }
 
 .image-text-container {
@@ -250,15 +273,26 @@ h1 {
 
 .accord-image {
     width: 100%;
-    max-width: 100px;
-    height: 100px;
+    max-width: 75px;
+    height: 75px;
     object-fit: cover;
     border-radius: 50%;
     cursor:pointer;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 .accord-image:hover{
     
+}
+
+
+.character-accordion {
+    display:flex;
+}
+.perfume-pyramid {
+    flex:1;
+}
+.accordChart {
+    flex:1;
 }
 
 

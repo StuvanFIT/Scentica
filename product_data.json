@@ -1,4 +1,15 @@
 {
+  "accords": {
+    "Ambergris": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183682/Feb_cqfykt.webp",
+    "BayLeaf": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183705/spices-2546297_1280_hddg2j.jpg",
+    "GrapeFruit": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732019099/grapefruit-1647688_1280_r2yuwc.jpg",
+    "GuaiacWood": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183686/il_fullxfull.3807153992_4fyc_ylc5vd.webp",
+    "Jasmine": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183691/jasmine-4284856_1280_vumlhs.jpg",
+    "MandarinOrange": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732180223/mandarin-4760224_1280_z7bxjb.jpg",
+    "OakMoss": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183696/moss-7909644_1280_rraseu.jpg",
+    "Patchouli": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183700/Pogostemonpacholi-Pachouli_Pachouli_1_qnglkw.jpg",
+    "SeaWater": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732178147/sea-6708858_1280_euw3xv.jpg"
+  },
   "brands": {
     "bvlgari": "",
     "calvin klein": "",
@@ -47,14 +58,34 @@
       },
       "ingredients": "ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), BENZYL SALICYLATE, LIMONENE, LINALOOL, COUMARIN, BUTYL METHOXYDIBENZOYLMETHANE, ETHYLHEXYL SALICYLATE, CITRONELLOL, GERANIOL, ALPHA-ISOMETHYL IONONE, CITRAL, EUGENOL, BENZYL BENZOATE, CINNAMAL, BENZYL ALCOHOL, CI 60730 (EXT. VIOLET 2), CI 19140 (YELLOW 5), CI 14700 (RED 4), CI 42090 (BLUE 1).",
       "inspiredQuote": "Inspired By Paco Rabanne Invictus",
-      "mainAccords": [
-        "Woody"
-      ],
+      "fragranceNotes": {
+        "baseNotes": {
+          "Ambergris": true,
+          "GuaiacWood": true,
+          "OakMoss": true,
+          "Patchouli": true
+        },
+        "middleNotes": {
+          "BayLeaf": true,
+          "Jasmine": true
+        },
+        "topNotes": {
+          "GrapeFruit": "true",
+          "MandarinOrange": true,
+          "SeaWater": true
+        }
+      },
+      "fragranceAccords": {
+
+      },
       "name": "Paco Rabanne Invictus",
       "productID": "-OBPMuOpy_fkiYNct6wj",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     },
     "-OBPfaoV69s1ZUKF_waL": {
       "description": "A bold and masculine fragrance, Dylan Blue contains the sensual scents of the Mediterranean.   The fragrance reveals notes of ambergris, revisited with bergamot and grapefruit. The earthy and citrusy olfactory notes are enveloped by black pepper, papyrus and incense, together with mineral musk, Tonka beans and saffron.   The gritty perfume is kept in a blue geometric bottle embellished with gold-colored details, evoking the sea and the sand of the Mediterranean.  Fragrance Note: Wood",
@@ -73,8 +104,11 @@
       "name": "Dylan Blue Pour Homme",
       "productID": "-OBPfaoV69s1ZUKF_waL",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     },
     "-OBPgVYkUPS5zIf77w0T": {
       "description": "In the words of Donatella Versace, \"Versace Man is synonymous with elegance and seduction. It is dedicated to the modern man, full of charisma and self-confidence.\" A surprisingly fresh fragrance with bubbly notes and an amber and musk base for a mysterious, and skin-deep sensation.",
@@ -94,8 +128,11 @@
       "name": "Versace Eau Fraiche",
       "productID": "-OBPgVYkUPS5zIf77w0T",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     },
     "-OBPiNz2Il5iXOr9aCIg": {
       "description": "Absolute sensuality. Absolute transparency. Absolute brightness. An absolute temptation. Versace introduces Bright Crystal Absolu, the intense version of one of the most beloved jewel-fragrances in the world, where the essence of Bright Crystal is enhanced to the extreme. A fragrance made even more intoxicating by its enhanced olfactory concentrations and prolonged persistence. For a woman who entrusts her femininity to the timeless seductive power of Bright Crystal, in harmony with versace glamour.",
@@ -115,8 +152,11 @@
       "name": "Versace Bright Crystal",
       "productID": "-OBPiNz2Il5iXOr9aCIg",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     },
     "-OBPihTQqaPxECTgjIIE": {
       "description": "Evoking the purity and clarity of crystal, the iconic BVLGARI Omnia Crystalline is a luminous Eau de Toilette signed by Master Perfumer Alberto Morillas",
@@ -135,8 +175,11 @@
       "name": "Bvlgari Omnia Crystalline ",
       "productID": "-OBPihTQqaPxECTgjIIE",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     },
     "-OBPj28gGWTlCTB2Ljip": {
       "description": "Play with fire and obey no one. Except for his fantasies. Dazzle, like nothing else. And bring luck. Lady MILLION creates a feeling of vertigo. A perfume for a cheeky girl, under the spotlight... a golden girl. Lady MILLION is a woody, floral fragrance, combining fresh, but carnal flowers with sexy patchouli. A fresh and addictive scent, seductive, sensual. Disarming!",
@@ -155,8 +198,11 @@
       "name": "Paco Rabanne Lady Million",
       "productID": "-OBPj28gGWTlCTB2Ljip",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     },
     "-OBPjUzc7HrO-sTXxAXM": {
       "description": "Purity. Unity. Sensuality. Calvin Klein pioneered the unisex category as ck one entered the market as the first “shared” fragrance, defying expectations and breaking boundaries. Clean and contemporary with a refreshing green tea signature throughout, it is intended to be used lavishly.",
@@ -175,8 +221,11 @@
       "name": "Calvin Klein CK One",
       "productID": "-OBPjUzc7HrO-sTXxAXM",
       "quantity": 9,
-      "sizeOptions":[50,100],
-      "rating": 5
+      "rating": 5,
+      "sizeOptions": [
+        50,
+        100
+      ]
     }
   }
 }

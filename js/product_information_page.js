@@ -15,7 +15,11 @@ export function displayProductInfo(){
         //Append product information to the details section:
         displayProdDetails(currentProduct);
 
+        displayProdNotes(currentProduct);
+
         displayProdAccords(currentProduct);
+
+
 
 
 
@@ -110,11 +114,11 @@ function displayProdDetails(currentProduct){
 }
 
 
-function displayProdAccords(currentProduct) {
+function displayProdNotes(currentProduct) {
     console.log(currentProduct);
 
     // Retrieve the accords
-    const prodAccords = currentProduct.mainAccords;
+    const prodAccords = currentProduct.fragranceNotes;
 
     // Function to create image element asynchronously
     const createImgElement = async (note) => {
@@ -134,6 +138,7 @@ function displayProdAccords(currentProduct) {
 
     
             const accordText = document.createElement("h4");
+            accordText.style.fontSize = "12.5px";
             accordText.innerHTML = note;
 
             imageTextContainer.appendChild(noteImg)
@@ -169,6 +174,22 @@ function displayProdAccords(currentProduct) {
     renderNotes(prodAccords.middleNotes, "middle-notes");
     renderNotes(prodAccords.baseNotes, "base-notes");
 }
+
+function displayProdAccords(currentProduct){
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,17 +227,19 @@ var accordions = document.getElementsByClassName("accordion");
 
 for (var i=0; i< accordions.length; i++) {
     accordions[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
 
         this.classList.toggle("active");
-
         var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
 
-        if (panel.style.display === "block"){
-            panel.style.display = "none";
-
-        } else{
-            panel.style.display = "block";
-        }
+      
 
         
     });
