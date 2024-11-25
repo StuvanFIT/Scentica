@@ -133,7 +133,7 @@ function displayProdAccords(currentProduct) {
             imageTextContainer.classList.add("image-text-container");
 
     
-            const accordText = document.createElement("h2");
+            const accordText = document.createElement("h4");
             accordText.innerHTML = note;
 
             imageTextContainer.appendChild(noteImg)
@@ -146,7 +146,7 @@ function displayProdAccords(currentProduct) {
             return imageTextContainer; // Return the created image element
         }
 
-        return null; // Return null if the accord doesn't exist
+        return null; 
     };
 
     // Render notes into the container
@@ -197,6 +197,28 @@ for (var i = 0; i < wrappers.length; i++) {
         } else {
             expandButton.textContent = "+";  // Expand icon when content is hidden
         }
+    });
+}
+
+
+
+var accordions = document.getElementsByClassName("accordion");
+
+for (var i=0; i< accordions.length; i++) {
+    accordions[i].addEventListener("click", function (e) {
+
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+
+        if (panel.style.display === "block"){
+            panel.style.display = "none";
+
+        } else{
+            panel.style.display = "block";
+        }
+
+        
     });
 }
 
