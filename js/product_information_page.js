@@ -13,22 +13,41 @@ export function displayProductInfo(){
         displayImageGallery(currentProduct);
 
         //Append product information to the details section:
-        displayProdDetails(currentProduct);
-
-        displayProdNotes(currentProduct);
-
-        displayProdAccords(currentProduct);
+        displayOpeningDetails(currentProduct);
 
 
-
-
-
-
-
-
+        displayAccordions(currentProduct);
 
     }
 }
+
+
+function displayAccordions(currentProduct){
+
+
+    //Character Accordion Tab
+    displayProdNotes(currentProduct);
+    displayProdAccords(currentProduct);
+
+    //Description Accordion Tab
+    displayDescription(currentProduct);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function displayImageGallery(currentProduct){
     
@@ -61,7 +80,7 @@ function displayImageGallery(currentProduct){
     currGallery.appendChild(image4);
 }
 
-function displayProdDetails(currentProduct){
+function displayOpeningDetails(currentProduct){
 
     const prodTitle = document.getElementById("prodTitle");
     prodTitle.textContent = currentProduct.name;
@@ -82,14 +101,6 @@ function displayProdDetails(currentProduct){
         
         prodReviewsRating.appendChild(starSpan);
     }
-
-
-    const prodDesc = document.getElementById("prodDesc");
-    prodDesc.textContent = currentProduct.description;
-
-    
-    const prodIngredients = document.getElementById("prodIngredients");
-    prodIngredients.textContent = currentProduct.ingredients;
 
 
     const prodType = document.getElementById("prodType");
@@ -180,26 +191,16 @@ function displayProdAccords(currentProduct){
 
     const getAccordColour = async (accord) =>{
         //Reference the accord colour palette:
-        console.log(accord)
         const accordColoursPath = ref(database, `accordColourPalette/` + `${accord[0]}`);
-        console.log(accordColoursPath)
         const snapshot = await get(accordColoursPath);
-
-
-
         if (snapshot.exists){
 
             const accordColour = snapshot.val();
     
             return accordColour;
         }
-
         return null;
-
-
     }
-
-   
 
     const containerID  = document.querySelector(".accordChartContainer");
 
@@ -208,57 +209,44 @@ function displayProdAccords(currentProduct){
 
     const sortedAccords = accordArray.sort((a,b) => parseInt(b[1]) - parseInt(a[1]));
     
-
-
-
-
-
-
-    
     //creating the block level element for each main accord of the product:
     sortedAccords.forEach(accord =>{
 
 
         getAccordColour(accord).then(accordColour => {
-            
-        const element = document.createElement("div")
-        element.classList.add("accordBar");
-        element.style.height = "24px";
-        element.style.width = accord[1];
-        element.style.borderBottomRightRadius = "10px";
-        element.style.borderTopRightRadius = "10px";
-        element.style.backgroundColor = accordColour;
-        element.style.borderBottom = "1px solid black";
-        console.log(accord[0])
-        element.textContent = accord[0];
-        element.style.color = "black";
-        containerID.appendChild(element);
+                
+            const element = document.createElement("div")
+            element.classList.add("accordBar");
+            element.style.height = "24px";
+            element.style.width = accord[1];
+            element.style.borderBottomRightRadius = "10px";
+            element.style.borderTopRightRadius = "10px";
+            element.style.backgroundColor = accordColour;
+            element.style.borderBottom = "1px solid black";
+            console.log(accord[0])
+            element.textContent = accord[0];
+            element.style.color = "black";
+            containerID.appendChild(element);
 
 
         }).catch(error =>{
             console.error(error);
         })
-        
 
-
-
-        
     });
-
-
-
-
-    
-
-
-
-
-
-
-
-
 }
 
+
+
+function displayDescription(currentProduct){
+    const prodDesc = document.getElementById("prodDesc");
+    prodDesc.textContent = currentProduct.description;
+
+    
+    const prodIngredients = document.getElementById("prodIngredients");
+    prodIngredients.textContent = currentProduct.ingredients;
+
+}
 
 
 
@@ -291,7 +279,7 @@ for (var i = 0; i < wrappers.length; i++) {
 
 
         if (wrapperContent.classList.contains("visible")) {
-            console.log("k")
+
             expandButton.textContent = "-";  // Collapse icon when content is shown
         } else {
             expandButton.textContent = "+";  // Expand icon when content is hidden

@@ -226,7 +226,7 @@ h1 {
     border-radius: 10px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.8s ease-out, 0.2s ease-in;
 
 }
 
@@ -295,6 +295,7 @@ h1 {
 }
 
 .accordChartContainer {
+    
     display:block;
     height:100%;
     
@@ -303,6 +304,10 @@ h1 {
 .accordBar {
     text-align: center;
     padding:6px;
+}
+
+.descContainer {
+    padding:50px;
 }
 
 
