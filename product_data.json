@@ -1,34 +1,23 @@
 {
-  "noteImages": {
-    "Ambergris": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183682/Feb_cqfykt.webp",
-    "BayLeaf": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183705/spices-2546297_1280_hddg2j.jpg",
-    "GrapeFruit": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732019099/grapefruit-1647688_1280_r2yuwc.jpg",
-    "GuaiacWood": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183686/il_fullxfull.3807153992_4fyc_ylc5vd.webp",
-    "Jasmine": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183691/jasmine-4284856_1280_vumlhs.jpg",
-    "MandarinOrange": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732180223/mandarin-4760224_1280_z7bxjb.jpg",
-    "OakMoss": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183696/moss-7909644_1280_rraseu.jpg",
-    "Patchouli": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183700/Pogostemonpacholi-Pachouli_Pachouli_1_qnglkw.jpg",
-    "SeaWater": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732178147/sea-6708858_1280_euw3xv.jpg"
-  },
   "accordColourPalette": {
     "amber": "rgb(255, 191, 128)",
     "animalic": "rgb(153, 102, 51)",
     "aquatic": "rgb(0, 128, 255)",
     "aromatic": "rgb(102, 204, 153)",
     "citrus": "rgb(255, 223, 0)",
-    "fresh spicy": "rgb(255, 128, 0)",
-    "marine": "rgb(0, 102, 204)",
-    "salty": "rgb(173, 216, 230)",
-    "white floral": "rgb(255, 250, 250)",
-    "woody": "rgb(139, 69, 19)",
-    "musky": "rgb(224, 224, 224)",
     "floral": "rgb(255, 182, 193)",
-    "sweet": "rgb(255, 105, 180)",
+    "fresh": "rgb(144, 238, 144)",
+    "fresh spicy": "rgb(255, 128, 0)",
     "green": "rgb(0, 128, 0)",
-    "powdery": "rgb(220, 220, 220)",
     "incense": "rgb(85, 26, 139)",
+    "marine": "rgb(0, 102, 204)",
+    "musky": "rgb(224, 224, 224)",
     "patchouli": "rgb(107, 142, 35)",
-    "fresh": "rgb(144, 238, 144)"
+    "powdery": "rgb(220, 220, 220)",
+    "salty": "rgb(173, 216, 230)",
+    "sweet": "rgb(255, 105, 180)",
+    "white floral": "rgb(255, 250, 250)",
+    "woody": "rgb(139, 69, 19)"
   },
   "brands": {
     "bvlgari": "",
@@ -64,6 +53,28 @@
         "-OBPj28gGWTlCTB2Ljip": true
       }
     }
+  },
+  "noteImages": {
+    "Ambergris": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183682/Feb_cqfykt.webp",
+    "Ambroxan": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808496/Picsart_24-07-09_13-50-31-529_nxwshh.webp",
+    "BayLeaf": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183705/spices-2546297_1280_hddg2j.jpg",
+    "Black Pepper": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808493/pepper-5501218_1280_q5sp3p.jpg",
+    "Bergamot": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808447/bergamot-1554224_1280_i2etku.jpg",
+    "Fig Leaf": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808484/nature-5038475_1280_chfzi1.jpg",
+    "GrapeFruit": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732019099/grapefruit-1647688_1280_r2yuwc.jpg",
+    "GuaiacWood": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183686/il_fullxfull.3807153992_4fyc_ylc5vd.webp",
+    "Incense": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808472/Go-For-Zero-Australia-Stray-Willow-Australia-Incense-Sticks-Grounding-Blend-1_1200x_mutbpx.webp",
+    "Jasmine": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183691/jasmine-4284856_1280_vumlhs.jpg",
+    "MandarinOrange": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732180223/mandarin-4760224_1280_z7bxjb.jpg",
+    "Musk": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808480/musk-scaled_pfdj7d.jpg",
+    "OakMoss": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183696/moss-7909644_1280_rraseu.jpg",
+    "Papyrus": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808489/papyrus-3694827_1280_cbcopc.jpg",
+    "Patchouli": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183700/Pogostemonpacholi-Pachouli_Pachouli_1_qnglkw.jpg",
+    "Saffron": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808450/blossom-5056451_1280_kgmcin.jpg",
+    "SeaWater": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732178147/sea-6708858_1280_euw3xv.jpg",
+    "Tonka Bean": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808454/coffee-1576552_1280_bupysq.jpg",
+    "Violet Leaf": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808461/cranesbill-3486833_1280_agmeiy.jpg",
+    "Water Notes": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732808467/drop-of-water-578897_1280_nrlbck.jpg"
   },
   "products": {
     "-OBPMuOpy_fkiYNct6wj": {
@@ -128,12 +139,33 @@
         "musky": "50%",
         "woody": "70%"
       },
+      "fragranceNotes": {
+        "baseNotes": {
+          "Incense": true,
+          "Tonka Bean": true,
+          "Saffron": true,
+          "Musk": true
+        },
+        "middleNotes": {
+          "Black Pepper": true,
+          "Patchouli": true,
+          "Violet Leaf":true,
+          "Papyrus":true,
+          "Ambroxan":true
+        },
+        "topNotes": {
+          "GrapeFruit": "true",
+          "FigLeaf": true,
+          "Bergamot": true,
+          "Water Notes":true
+        }
+      },
       "gender": "Men",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
         "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/b_rgb:FFFFFF/c_crop,w_600,h_850/v1730796331/441639820_3_2_720x928_wbwaif.webp",
-        "image3": "None",
-        "image4": "None"
+        "image3": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732797346/DYLAN-BLUE-HUMME-02-01-img-15092__94804_i0z0hn.jpg",
+        "image4": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732797349/versace-pour-homme-dylan-blue-edt-grooming-set-gift-set-377305_zflvik.webp"
       },
       "ingredients": "ALCOHOL, PARFUM / FRAGRANCE, AQUA/WATER/EAU, DIPROPYLENE GLYCOL, LIMONENE, LINALOOL, BENZYL SALICYLATE, BENZYL ALCOHOL, BUTYL METHOXYDIBENZOYLMETHANE, HYDROXICITRONELLAL, METHYL ANTHRANILATE, CITRONELLOL, ALPHA-ISOMETHYL IONONE, COUMARIN, GERANIOL, ISOEUGENOL, BENZYL BENZOATE, CITRAL, TRIE(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, EUGENOL, FARNESOL, CI 60730 / EXT. VIOLET 2, CI 17200 / RED 33. 560528 07",
       "inspiredQuote": "Inspired By Versace Dylan Blue",
@@ -157,6 +189,22 @@
         "fresh spicy": "70%",
         "musky": "50%",
         "woody": "80%"
+      },
+      "fragranceNotes": {
+        "topNotes": {
+          "Lemon": true,
+          "Starfruit": true,
+          "Cardamom": true
+        },
+        "middleNotes": {
+          "CedarLeaf": true,
+          "Tarragon": true
+        },
+        "baseNotes": {
+          "Musk": true,
+          "Amber": true,
+          "WoodyNotes": true
+        }
       },
       "gender": "Men",
       "images": {
@@ -188,6 +236,22 @@
         "fresh": "80%",
         "musky": "70%",
         "powdery": "50%"
+      },"fragranceNotes": {
+        "topNotes": {
+          "Pomegranate": true,
+          "Yuzu": true,
+          "IcedAccord": true
+        },
+        "middleNotes": {
+          "Peony": true,
+          "Magnolia": true,
+          "LotusFlower": true
+        },
+        "baseNotes": {
+          "Amber": true,
+          "AcajouWood": true,
+          "Musk": true
+        }
       },
       "gender": "Women",
       "images": {
@@ -220,6 +284,19 @@
         "powdery": "40%",
         "woody": "50%"
       },
+      "fragranceNotes": {
+        "topNotes": {
+          "LotusFlower": true,
+          "NashiPear": true
+        },
+        "middleNotes": {
+          "Bamboo": true
+        },
+        "baseNotes": {
+          "BalsaWood": true,
+          "Amber": true
+        }
+      },
       "gender": "Women",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801716/3020100671_01M_izg0qk.jpg",
@@ -251,6 +328,23 @@
         "sweet": "80%",
         "woody": "70%"
       },
+      "fragranceNotes": {
+        "topNotes": {
+          "Neroli": true,
+          "AmalfiLemon": true,
+          "Raspberry": true
+        },
+        "middleNotes": {
+          "Jasmine": true,
+          "AfricanOrangeFlower": true,
+          "Gardenia": true
+        },
+        "baseNotes": {
+          "Patchouli": true,
+          "Honey": true,
+          "Amber": true
+        }
+      },
       "gender": "Women",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
@@ -280,6 +374,23 @@
         "fresh spicy": "60%",
         "green": "80%",
         "musky": "50%"
+      },
+      "fragranceNotes": {
+        "topNotes": {
+          "Bergamot": true,
+          "Lemon": true,
+          "Pineapple": true
+        },
+        "middleNotes": {
+          "Nutmeg": true,
+          "Violet": true,
+          "Jasmine": true
+        },
+        "baseNotes": {
+          "Musk": true,
+          "Amber": true,
+          "Cedar": true
+        }
       },
       "gender": "Unisex",
       "images": {

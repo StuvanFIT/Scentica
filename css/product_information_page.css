@@ -283,8 +283,8 @@ h1 {
 
 .accord-image {
     width: 100%;
-    max-width: 75px;
-    height: 75px;
+    max-width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
     cursor:pointer;
@@ -295,6 +295,7 @@ h1 {
 
 .character-accordion {
     display:flex;
+    gap:30px;
 }
 .perfume-pyramid {
     flex:1;

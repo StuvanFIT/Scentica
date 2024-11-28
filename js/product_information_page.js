@@ -139,7 +139,15 @@ function displayProdNotes(currentProduct) {
         if (snapshot.exists()) {
             const accordValues = snapshot.val();
             const noteImg = document.createElement("img");
-            noteImg.src = accordValues[note]; // Retrieve the image URL for the note
+
+            if (accordValues[note]){
+                noteImg.src = accordValues[note]; // Retrieve the image URL for the note
+            } else {
+
+                noteImg.src = "../assets/images/unavailable.png";
+            }
+
+            
             noteImg.alt = note;
             noteImg.className = "accord-image";
 
@@ -239,6 +247,7 @@ function displayProdAccords(currentProduct){
 
 
 function displayDescription(currentProduct){
+    
     const prodDesc = document.getElementById("prodDesc");
     prodDesc.textContent = currentProduct.description;
 
