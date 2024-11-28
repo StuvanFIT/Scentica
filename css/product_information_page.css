@@ -280,9 +280,7 @@ h1 {
     cursor:pointer;
     border: 2px solid black;
 }
-.accord-image:hover{
-    
-}
+
 
 
 .character-accordion {
@@ -293,6 +291,18 @@ h1 {
 }
 .accordChart {
     flex:1;
+    margin: auto;
+}
+
+.accordChartContainer {
+    display:block;
+    height:100%;
+    
+}
+
+.accordBar {
+    text-align: center;
+    padding:6px;
 }
 
 

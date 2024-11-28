@@ -1,5 +1,5 @@
 {
-  "accords": {
+  "noteImages": {
     "Ambergris": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183682/Feb_cqfykt.webp",
     "BayLeaf": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183705/spices-2546297_1280_hddg2j.jpg",
     "GrapeFruit": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732019099/grapefruit-1647688_1280_r2yuwc.jpg",
@@ -9,6 +9,26 @@
     "OakMoss": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183696/moss-7909644_1280_rraseu.jpg",
     "Patchouli": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732183700/Pogostemonpacholi-Pachouli_Pachouli_1_qnglkw.jpg",
     "SeaWater": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1732178147/sea-6708858_1280_euw3xv.jpg"
+  },
+  "accordColourPalette": {
+    "amber": "rgb(255, 191, 128)",
+    "animalic": "rgb(153, 102, 51)",
+    "aquatic": "rgb(0, 128, 255)",
+    "aromatic": "rgb(102, 204, 153)",
+    "citrus": "rgb(255, 223, 0)",
+    "fresh spicy": "rgb(255, 128, 0)",
+    "marine": "rgb(0, 102, 204)",
+    "salty": "rgb(173, 216, 230)",
+    "white floral": "rgb(255, 250, 250)",
+    "woody": "rgb(139, 69, 19)",
+    "musky": "rgb(224, 224, 224)",
+    "floral": "rgb(255, 182, 193)",
+    "sweet": "rgb(255, 105, 180)",
+    "green": "rgb(0, 128, 0)",
+    "powdery": "rgb(220, 220, 220)",
+    "incense": "rgb(85, 26, 139)",
+    "patchouli": "rgb(107, 142, 35)",
+    "fresh": "rgb(144, 238, 144)"
   },
   "brands": {
     "bvlgari": "",
@@ -49,15 +69,18 @@
     "-OBPMuOpy_fkiYNct6wj": {
       "brand": "Paco Rabanne",
       "description": "A heroic woody-fresh fragrance where the vibrant meets the muscular. Invictus perfume embodies two forces that collide: biting freshness and animal sensuality. The sea winds dominate. Grapefruit bursts. The virile woods prevail and ignite. The scent of magnetic patchouli, sensual guaiac wood and ambergris. Double victory!",
-      "gender": "Men",
-      "images": {
-        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
-        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg",
-        "image3": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1731390109/10040732647454_w8bc57.jpg",
-        "image4": "https://res.cloudinary.com/dqtt7aqat/image/upload/c_crop,w_650,h_850/v1731390114/186808060_7_1_720x928_gbcz3l.webp"
+      "fragranceAccords": {
+        "amber": "60%",
+        "animalic": "20%",
+        "aquatic": "20%",
+        "aromatic": "90%",
+        "citrus": "100%",
+        "fresh spicy": "70%",
+        "marine": "90%",
+        "salty": "50%",
+        "white floral": "40%",
+        "woody": "60%"
       },
-      "ingredients": "ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), BENZYL SALICYLATE, LIMONENE, LINALOOL, COUMARIN, BUTYL METHOXYDIBENZOYLMETHANE, ETHYLHEXYL SALICYLATE, CITRONELLOL, GERANIOL, ALPHA-ISOMETHYL IONONE, CITRAL, EUGENOL, BENZYL BENZOATE, CINNAMAL, BENZYL ALCOHOL, CI 60730 (EXT. VIOLET 2), CI 19140 (YELLOW 5), CI 14700 (RED 4), CI 42090 (BLUE 1).",
-      "inspiredQuote": "Inspired By Paco Rabanne Invictus",
       "fragranceNotes": {
         "baseNotes": {
           "Ambergris": true,
@@ -75,9 +98,15 @@
           "SeaWater": true
         }
       },
-      "fragranceAccords": {
-
+      "gender": "Men",
+      "images": {
+        "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795463/9883500871710_jovzfm.jpg",
+        "image2": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730795213/9883501232158_ei80az.jpg",
+        "image3": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1731390109/10040732647454_w8bc57.jpg",
+        "image4": "https://res.cloudinary.com/dqtt7aqat/image/upload/c_crop,w_650,h_850/v1731390114/186808060_7_1_720x928_gbcz3l.webp"
       },
+      "ingredients": "ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), BENZYL SALICYLATE, LIMONENE, LINALOOL, COUMARIN, BUTYL METHOXYDIBENZOYLMETHANE, ETHYLHEXYL SALICYLATE, CITRONELLOL, GERANIOL, ALPHA-ISOMETHYL IONONE, CITRAL, EUGENOL, BENZYL BENZOATE, CINNAMAL, BENZYL ALCOHOL, CI 60730 (EXT. VIOLET 2), CI 19140 (YELLOW 5), CI 14700 (RED 4), CI 42090 (BLUE 1).",
+      "inspiredQuote": "Inspired By Paco Rabanne Invictus",
       "name": "Paco Rabanne Invictus",
       "productID": "-OBPMuOpy_fkiYNct6wj",
       "quantity": 9,
@@ -89,6 +118,16 @@
     },
     "-OBPfaoV69s1ZUKF_waL": {
       "description": "A bold and masculine fragrance, Dylan Blue contains the sensual scents of the Mediterranean.   The fragrance reveals notes of ambergris, revisited with bergamot and grapefruit. The earthy and citrusy olfactory notes are enveloped by black pepper, papyrus and incense, together with mineral musk, Tonka beans and saffron.   The gritty perfume is kept in a blue geometric bottle embellished with gold-colored details, evoking the sea and the sand of the Mediterranean.  Fragrance Note: Wood",
+      "fragranceAccords": {
+        "amber": "60%",
+        "aquatic": "65%",
+        "aromatic": "75%",
+        "citrus": "100%",
+        "fresh spicy": "80%",
+        "incense": "40%",
+        "musky": "50%",
+        "woody": "70%"
+      },
       "gender": "Men",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730796733/90_R721010-R100MLS_RNUL_20_DylanBluePourHommeEDT100ml--Versace-online-store_0_1_igvpxk.avif",
@@ -112,6 +151,13 @@
     },
     "-OBPgVYkUPS5zIf77w0T": {
       "description": "In the words of Donatella Versace, \"Versace Man is synonymous with elegance and seduction. It is dedicated to the modern man, full of charisma and self-confidence.\" A surprisingly fresh fragrance with bubbly notes and an amber and musk base for a mysterious, and skin-deep sensation.",
+      "fragranceAccords": {
+        "amber": "60%",
+        "citrus": "90%",
+        "fresh spicy": "70%",
+        "musky": "50%",
+        "woody": "80%"
+      },
       "gender": "Men",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730971915/90_R500010-R100MLS_RNUL_20_Eau_Frache_EDT_100_ml-Accessories-Versace-online-store_0_1_pnqtli.avif",
@@ -136,6 +182,13 @@
     },
     "-OBPiNz2Il5iXOr9aCIg": {
       "description": "Absolute sensuality. Absolute transparency. Absolute brightness. An absolute temptation. Versace introduces Bright Crystal Absolu, the intense version of one of the most beloved jewel-fragrances in the world, where the essence of Bright Crystal is enhanced to the extreme. A fragrance made even more intoxicating by its enhanced olfactory concentrations and prolonged persistence. For a woman who entrusts her femininity to the timeless seductive power of Bright Crystal, in harmony with versace glamour.",
+      "fragranceAccords": {
+        "aquatic": "40%",
+        "floral": "100%",
+        "fresh": "80%",
+        "musky": "70%",
+        "powdery": "50%"
+      },
       "gender": "Women",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801511/90_R510032-R090MLS_RNUL_20_Bright_Crystal_EDT_90_ml-Accessories-Versace-online-store_1_1_kpwagk.avif",
@@ -160,6 +213,13 @@
     },
     "-OBPihTQqaPxECTgjIIE": {
       "description": "Evoking the purity and clarity of crystal, the iconic BVLGARI Omnia Crystalline is a luminous Eau de Toilette signed by Master Perfumer Alberto Morillas",
+      "fragranceAccords": {
+        "aquatic": "70%",
+        "floral": "85%",
+        "fresh": "60%",
+        "powdery": "40%",
+        "woody": "50%"
+      },
       "gender": "Women",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730801716/3020100671_01M_izg0qk.jpg",
@@ -183,6 +243,14 @@
     },
     "-OBPj28gGWTlCTB2Ljip": {
       "description": "Play with fire and obey no one. Except for his fantasies. Dazzle, like nothing else. And bring luck. Lady MILLION creates a feeling of vertigo. A perfume for a cheeky girl, under the spotlight... a golden girl. Lady MILLION is a woody, floral fragrance, combining fresh, but carnal flowers with sexy patchouli. A fresh and addictive scent, seductive, sensual. Disarming!",
+      "fragranceAccords": {
+        "amber": "50%",
+        "citrus": "60%",
+        "floral": "90%",
+        "patchouli": "40%",
+        "sweet": "80%",
+        "woody": "70%"
+      },
       "gender": "Women",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730800634/908119640_908119820_1_2_720x928_jk4nw0.webp",
@@ -206,6 +274,13 @@
     },
     "-OBPjUzc7HrO-sTXxAXM": {
       "description": "Purity. Unity. Sensuality. Calvin Klein pioneered the unisex category as ck one entered the market as the first “shared” fragrance, defying expectations and breaking boundaries. Clean and contemporary with a refreshing green tea signature throughout, it is intended to be used lavishly.",
+      "fragranceAccords": {
+        "citrus": "90%",
+        "floral": "40%",
+        "fresh spicy": "60%",
+        "green": "80%",
+        "musky": "50%"
+      },
       "gender": "Unisex",
       "images": {
         "image1": "https://res.cloudinary.com/dqtt7aqat/image/upload/v1730973522/8da839c4-66bb-4424-8c0c-b4d3f0c928d9_bagrsy.jpg",

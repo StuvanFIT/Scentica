@@ -122,7 +122,7 @@ function displayProdNotes(currentProduct) {
 
     // Function to create image element asynchronously
     const createImgElement = async (note) => {
-        const accordsPath = ref(database, "accords/");
+        const accordsPath = ref(database, "noteImages/");
         const snapshot = await get(accordsPath); // Await the database call
 
         if (snapshot.exists()) {
@@ -137,7 +137,7 @@ function displayProdNotes(currentProduct) {
             imageTextContainer.classList.add("image-text-container");
 
     
-            const accordText = document.createElement("h4");
+            const accordText = document.createElement("p");
             accordText.style.fontSize = "12.5px";
             accordText.innerHTML = note;
 
@@ -176,6 +176,84 @@ function displayProdNotes(currentProduct) {
 }
 
 function displayProdAccords(currentProduct){
+
+
+    const getAccordColour = async (accord) =>{
+        //Reference the accord colour palette:
+        console.log(accord)
+        const accordColoursPath = ref(database, `accordColourPalette/` + `${accord[0]}`);
+        console.log(accordColoursPath)
+        const snapshot = await get(accordColoursPath);
+
+
+
+        if (snapshot.exists){
+
+            const accordColour = snapshot.val();
+    
+            return accordColour;
+        }
+
+        return null;
+
+
+    }
+
+   
+
+    const containerID  = document.querySelector(".accordChartContainer");
+
+    const accordArray = Object.entries(currentProduct.fragranceAccords);
+    console.log(accordArray)
+
+    const sortedAccords = accordArray.sort((a,b) => parseInt(b[1]) - parseInt(a[1]));
+    
+
+
+
+
+
+
+    
+    //creating the block level element for each main accord of the product:
+    sortedAccords.forEach(accord =>{
+
+
+        getAccordColour(accord).then(accordColour => {
+            
+        const element = document.createElement("div")
+        element.classList.add("accordBar");
+        element.style.height = "24px";
+        element.style.width = accord[1];
+        element.style.borderBottomRightRadius = "10px";
+        element.style.borderTopRightRadius = "10px";
+        element.style.backgroundColor = accordColour;
+        element.style.borderBottom = "1px solid black";
+        console.log(accord[0])
+        element.textContent = accord[0];
+        element.style.color = "black";
+        containerID.appendChild(element);
+
+
+        }).catch(error =>{
+            console.error(error);
+        })
+        
+
+
+
+        
+    });
+
+
+
+
+    
+
+
+
+
+
 
 
 
