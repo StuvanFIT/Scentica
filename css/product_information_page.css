@@ -173,12 +173,19 @@ h1 {
 .fragranceNotesContainer {
     width:100%;
     display:flex;
-    gap:20px;
+    gap:5px;
+    border-bottom: 1px solid rgb(151, 150, 150);
+}
+
+.fragranceNotesHeading {
+    font-weight: normal;
+    font-size: 35px;
 }
 
 .item-one-quarter {
     flex:1;
     max-width: 25%;
+
 }
 
 .item-three-quarter {
@@ -191,7 +198,7 @@ h1 {
     background-color: rgb(243,243,243);
     color: black;
     cursor:pointer;
-    padding:18px;
+    padding:30px;
     width: 100%;
     text-align: left;
     border:none;
@@ -201,7 +208,7 @@ h1 {
 }
 .accordion-heading {
     font-family: "Jost", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .active, .accordion:hover {
@@ -242,9 +249,12 @@ h1 {
 
 
 
-.middleContent, .fragranceNotesContainer{
+.fragranceNotesContainer{
     min-height: 30vh;
-    padding: 5px 5px;
+    padding-top: 120px;
+    padding-right: 25px;
+    padding-bottom: 120px;
+    padding-left: 25px
 }
 
 .noteLevelHeader {
@@ -291,7 +301,7 @@ h1 {
 }
 .accordChart {
     flex:1;
-    margin: auto;
+    flex-direction: column;
 }
 
 .accordChartContainer {
@@ -310,6 +320,30 @@ h1 {
     padding:50px;
 }
 
+
+
+
+
+.similar-products {
+    display:flex;
+    flex-direction: column;
+    min-height: 30vh;
+    
+}
+
+.similar-products-scroll-container {
+    background-color: rgb(243,243,243);
+    height:30vh;
+    width:100%;
+    margin:auto;
+}
+.similar-products-header-container {
+    text-align: center;
+    padding:30px;
+}
+.similar-products-header {
+    font-weight:normal;
+}
 
 
 
