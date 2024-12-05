@@ -177,7 +177,7 @@ h1 {
     border-bottom: 1px solid rgb(151, 150, 150);
 }
 
-.fragranceNotesHeading {
+.fragranceNotesHeading, .reviewHeading{
     font-weight: normal;
     font-size: 35px;
 }
@@ -192,6 +192,8 @@ h1 {
     flex:3;
     max-width: 75%;
 }
+
+
 
 
 .accordion {
@@ -325,6 +327,135 @@ h1 {
 
 
 
+.product-review {
+    height:100%;
+    width:100%;
+    flex-grow: 1;
+    display: flex;
+    gap: 20px; /* Space between gallery and product details */
+    align-items: flex-start; /* Align items at the top */
+    background-color: rgb(243, 243, 243);
+    color:rgb(0, 0, 0);
+    
+
+}
+
+.review-container {
+    display:block;
+    width:100%;
+    height:100%;
+    gap:10px;
+    min-height: 30vh;
+    padding-top: 120px;
+    padding-right: 25px;
+    padding-bottom: 120px;
+    padding-left: 25px;
+}
+
+.review-top{
+    display:flex;
+    width:100%;
+    height:100%;
+    
+}
+
+.review-bottom{
+    width:100%;
+    height:100px;
+    background-color: red;
+    margin-top: 100px;
+}
+
+.yotpo {
+    display:flex;
+    height: 100%;
+    width:100%;
+}
+.yotpo-summary-section{
+    flex:1
+}
+.yotpo-vertical-border {
+    
+    height:100%;
+    border: 1px solid black;
+    margin:10px;
+}
+
+.review-button-container {
+    display:flex;
+    gap:4.5px;
+}
+.review-button {
+    font-size: 50px;
+    border-radius: 10px;
+    
+    padding:10px;
+}
+
+.write-review {
+    display: block;
+
+}
+
+
+
+.yotpo-star-distribution{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.yotpo-star-distribution .rating-container {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-evenly; /* Space out items evenly */
+    padding: 10px; /* Optional: Add padding for better spacing */
+}
+
+.yotpo-star-distribution .rating-container:hover {
+    cursor: pointer;
+
+}
+.yotpo-star-distribution .rating-container:hover .rating-value {
+    text-decoration: underline;
+}
+.yotpo-star-distribution .rating-container:hover .rating-bar-container {
+    opacity: 0.5;
+}
+.yotpo-star-distribution .rating-bar-container {
+    background-color: rgb(185, 185, 185);
+    border-radius: 17px;
+    margin-top: 10px; /* Optional: Adjust to your design needs */
+    height: 6px;
+    width:50%;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.yotpo-star-distribution .rating-bar {
+    background-color: rgb(0, 0, 0);
+    border-radius: 17px;
+    height: 6px;
+    width: 0%; /* Adjust as needed */
+    position: absolute;
+    top:0;
+    left:0;
+
+    
+}
+
+
+
+
+
+
+
 .similar-products {
     display:flex;
     flex-direction: column;
@@ -334,7 +465,7 @@ h1 {
 
 .similar-products-scroll-container {
     background-color: rgb(243,243,243);
-    height:30vh;
+    min-height:30vh;
     width:100%;
     margin:auto;
 }
@@ -344,6 +475,30 @@ h1 {
 }
 .similar-products-header {
     font-weight:normal;
+}
+
+
+.similar-products-scroll {
+    display:flex;
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    gap:15px;
+    margin:auto;
+    justify-content: start;
+}
+
+.scroll-item-container {
+    height:350px;
+    width:260px;
+    overflow-y: hidden;
+    flex-shrink: 0;
+
+}
+.scroll-item-container img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
 }
 
 
@@ -376,6 +531,7 @@ h1 {
         height: auto;
         object-fit: cover;
     }
+    
 }
 
 
