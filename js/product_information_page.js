@@ -321,6 +321,34 @@ for (var i=0; i< accordions.length; i++) {
 }
 
 
+var reviewButtons = document.querySelectorAll(".review-button");
+console.log("k")
+console.log(reviewButtons);
+
+
+reviewButtons.forEach((btn) =>{
+
+    btn.addEventListener("mouseover", function(e) {
+
+
+        const allBtns = Array.from(reviewButtons).slice(0, btn.value);
+        
+        allBtns.forEach(btn =>{
+            btn.style.backgroundColor = "gray";
+        })
+
+
+    })
+
+    btn.addEventListener("mouseout", function(e){
+
+
+        reviewButtons.forEach(btn =>{
+            btn.style.backgroundColor = "";
+        })
+
+    })
+})
 
 
 

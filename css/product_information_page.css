@@ -372,7 +372,8 @@ h1 {
     width:100%;
 }
 .yotpo-summary-section{
-    flex:1
+    flex:1;
+    text-align: center;
 }
 .yotpo-vertical-border {
     
@@ -384,6 +385,7 @@ h1 {
 .review-button-container {
     display:flex;
     gap:4.5px;
+    margin-top: 15px;
 }
 .review-button {
     font-size: 50px;
@@ -391,9 +393,15 @@ h1 {
     
     padding:10px;
 }
+.review-button:hover {
+    background-color: gray;
+    
+}
 
 .write-review {
     display: block;
+    text-align: center;
+    gap:10px;
 
 }
 
