@@ -1,0 +1,32 @@
+#reviewProductSideBar {
+    position:fixed;
+    background-color: rgb(251, 253, 251);
+    width: 150vh;   /* Full screen width */
+    height: 100vh;  /* Full screen height */
+    right:-150vh;
+    top:0;
+    z-index:2;
+    transition: right 0.3s ease;
+}
+
+#reviewProductSideBar.activeReview {
+    right:0;
+}
+
+#overlay-addProductReview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1; 
+}
+
+#overlay-addProductReview.activeReview {
+    opacity:1;
+    visibility: visible;
+}

@@ -390,11 +390,13 @@ h1 {
 .review-button {
     font-size: 50px;
     border-radius: 10px;
+    transition: background-color 0.5s ease;
     
     padding:10px;
 }
 .review-button:hover {
-    background-color: gray;
+    background-color: rgb(163, 161, 161);
+    cursor:pointer;
     
 }
 

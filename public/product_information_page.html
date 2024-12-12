@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/filtersort_sidebar.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/product_information_page.css">
+    <link rel="stylesheet" href="../css/reviewProductSideBar.css">
 
     <link rel="stylesheet" href="../css/animatedElements.css">
     <link rel="icon" href="../assets/icons/scenticaIcon.webp" type="image/x-icon">
@@ -42,6 +43,8 @@
     </nav>
 
     <main>
+
+        <div id="overlay-addProductReview" onclick="toggleReviewProductOverlay()"></div>
         <!-- Top Section: Product and Gallery -->
         <section class="topContent">
             <div class="galleryContainer">
@@ -294,11 +297,11 @@
                                 
                                 <span style="font-weight: bold;">Review this product</span>
                                 <div class="review-button-container">
-                                    <button class="review-button" value="1">★</button>
-                                    <button class="review-button" value="2">★</button>
-                                    <button class="review-button" value="3">★</button>
-                                    <button class="review-button" value="4">★</button>
-                                    <button class="review-button" value="5">★</button>
+                                    <button class="review-button" value="1" onclick="toggleReviewProduct(1)">★</button>
+                                    <button class="review-button" value="2" onclick="toggleReviewProduct(2)">★</button>
+                                    <button class="review-button" value="3" onclick="toggleReviewProduct(3)">★</button>
+                                    <button class="review-button" value="4" onclick="toggleReviewProduct(4)">★</button>
+                                    <button class="review-button" value="5" onclick="toggleReviewProduct(5)">★</button>
 
 
 
@@ -306,18 +309,7 @@
                                 
 
                             </div>
-
-
-
-    
-                            
-
-                            
-    
-    
-    
                         </div>
-    
                     </div>
                 </div>
 
@@ -335,14 +327,16 @@
 
 
             </div>
-
-
-
-
-
-
-
         </section>
+
+        <div id="reviewProductSideBar">
+            <span class="close-review-product" onclick="toggleReviewProductOverlay()">x</span>
+
+
+
+        </div>
+
+
 
 
 
@@ -455,6 +449,32 @@
     <!--Import the firebase CDN Module-->
     <script type="module" src="../js/firebaseConfig.js"></script>
     <script type="module" src="../js/product_information_page.js"></script>
+    <script>
+
+        function toggleReviewProduct(currentRating){
+            console.log(currentRating)
+
+
+            const reviewForm = document.getElementById("reviewProductSideBar");
+            const overlay = document.getElementById("overlay-addProductReview");
+
+            overlay.classList.toggle("activeReview");
+            reviewForm.classList.toggle("activeReview");
+
+
+        }
+
+        function toggleReviewProductOverlay(){
+            const reviewForm = document.getElementById("reviewProductSideBar");
+            const overlay = document.getElementById("overlay-addProductReview");
+
+            overlay.classList.toggle("activeReview");
+            reviewForm.classList.toggle("activeReview");
+        }
+
+
+
+    </script>
 
 </body>
 </html>
