@@ -7,6 +7,7 @@
     top:0;
     z-index:2;
     transition: right 0.3s ease;
+    overflow-y: auto;
 }
 
 #reviewProductSideBar.activeReview {
@@ -29,4 +30,39 @@
 #overlay-addProductReview.activeReview {
     opacity:1;
     visibility: visible;
+}
+
+.close-review-product-container{
+    text-align: left;
+    margin-left:20px;
+    cursor:pointer;
+}
+.close-review-product {
+    font-size:20px;
+    font-weight:bold;
+    transition: color 0.5s ease;
+}
+.close-review-product:hover {
+    color:red;
+}
+
+
+fieldset{
+    border: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input[name="review-title"] {
+    padding:10px;
+    width:50%;
+    height:3vh;
+}
+
+input[name="review-description"]{
+    padding:10px;
+    width:70%;
+    height:20vh;
 }

@@ -387,6 +387,7 @@ h1 {
     gap:4.5px;
     margin-top: 15px;
 }
+.form-review-button,
 .review-button {
     font-size: 50px;
     border-radius: 10px;
@@ -394,6 +395,7 @@ h1 {
     
     padding:10px;
 }
+.form-review-button:hover,
 .review-button:hover {
     background-color: rgb(163, 161, 161);
     cursor:pointer;

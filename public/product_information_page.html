@@ -302,9 +302,6 @@
                                     <button class="review-button" value="3" onclick="toggleReviewProduct(3)">★</button>
                                     <button class="review-button" value="4" onclick="toggleReviewProduct(4)">★</button>
                                     <button class="review-button" value="5" onclick="toggleReviewProduct(5)">★</button>
-
-
-
                                 </div>
                                 
 
@@ -330,7 +327,71 @@
         </section>
 
         <div id="reviewProductSideBar">
-            <span class="close-review-product" onclick="toggleReviewProductOverlay()">x</span>
+            <div class="close-review-product-container">
+                <span class="close-review-product" onclick="toggleReviewProductOverlay()">x</span>
+            </div>
+
+            <form>
+
+                <h1>Your Review</h1>
+
+
+                <fieldset>
+                    <hr>
+                    <p id="currentlyReviewing">Reviewing: </p>
+                    <hr>
+                    <p>Required fields are marked with *</p>
+                    <hr>
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="review-button-container">
+                        <button class="form-review-button" value="1">★</button>
+                        <button class="form-review-button" value="2">★</button>
+                        <button class="form-review-button" value="3">★</button>
+                        <button class="form-review-button" value="4">★</button>
+                        <button class="form-review-button" value="5">★</button>
+                    </div>
+
+
+                </fieldset>
+                
+                <fieldset>
+                    <label for="review-title">Review Title*</label>
+                    <input name="review-title" type="text" placeholder="Example: Best smelling and great value!" required>
+                    
+                </fieldset>
+                <fieldset>
+                    <label for="review-description"> Review Description*</label>    
+                    <input name="review-description" type="text" placeholder="What did you think of the product? Note down the quality, style, value and fit." required>
+                </fieldset>
+                <fieldset>
+                    <label for="review-recommendation"> Would you recommend this product?*</label>
+                    <input name="review-recommendation" type="radio" value="Yes" required>Yes
+                    <input name="review-recommendation" type="radio" value="No" required>No
+                </fieldset>
+
+
+
+                <fieldset>
+                    <label for="terms-and-conditions">
+                        <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" required>
+                        I accept the <a href="../public/termsServices.html"> terms & conditions*</a>
+    
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <input type="submit" value="Submit" style="padding:10px; width:20%; font-weight: bold;">
+                </fieldset>
+
+                
+
+
+            </form>
+            
 
 
 
