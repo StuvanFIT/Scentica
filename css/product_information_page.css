@@ -361,10 +361,30 @@ h1 {
 
 .review-bottom{
     width:100%;
-    height:100px;
-    background-color: red;
+    height: 200px;
+    background-color: rgb(243, 243, 243);
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+
+}
+
+.filter-sort-reviews {
+    display:flex;
+    gap:10px;
+}
+
+#filter-options, #sort-options{
+    padding:6px 20px;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+}
+
+#review-bottom-line {
     margin-top: 100px;
 }
+
+
+
 
 .yotpo {
     display:flex;
